@@ -65,11 +65,11 @@
     gap: 1.5rem;
 }
 
-.modal-locations .func__p{
+.modal-locations .func__p {
     padding-bottom: 6px;
 }
 
-.modal-locations a{
+.modal-locations a {
     color: #000;
 }
 
@@ -834,10 +834,6 @@ hr {
     gap: 3rem
 }
 
-.slider__list h3 {
-    /* text-transform: uppercase; */
-}
-
 .swiper__card {
     width: 40%;
     justify-content: space-between;
@@ -991,7 +987,7 @@ hr {
 .site__card:hover {
     transition: 0.3s;
     background-color: #e5e5e5;
-    border: 1px solid rgb(0 0 0 / .4)
+    border: 1px solid rgb(0 0 0 / .4);
 }
 
 .site__card h4 {
