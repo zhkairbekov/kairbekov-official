@@ -89,18 +89,29 @@
     justify-content: center;
 }
 
-.licence a {
-    height: 500px;
-}
-
-.licence a:hover {
+/* .licence a:hover {
     transition: 0.3s;
     background-color: #e5e5e5;
     box-shadow: 5px 5px 5px 0 rgb(0 0 0 / .25);
+} */
+
+.licence figure {
+    width: calc((100% / 2) - 2rem);
+    display: flex;
+}
+
+.licence a {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .licence img {
-    height: 100%;
+    width: 100%;
 }
 
 * {
@@ -875,7 +886,6 @@ hr {
 }
 
 .swiper__card {
-    width: 40%;
     justify-content: space-between;
     padding: 1.5rem 1.5rem 2rem 1.5rem;
     border-radius: 1rem;
@@ -889,7 +899,8 @@ hr {
     border-radius: 8px;
     display: flex;
     gap: 16px;
-    flex-direction: column
+    flex-direction: column;
+    width: 100%;
 }
 
 .swiper__card:hover {
@@ -899,9 +910,6 @@ hr {
 }
 
 .swiper__card img {
-    max-width: 466px;
-    height: 100%;
-    max-height: 335px;
     object-fit: cover;
     transition: transform 0.3s ease;
     border-radius: 16px
@@ -994,11 +1002,17 @@ hr {
     gap: 3rem
 }
 
-.site__card {
+.site__cards li,
+.slider__list li,
+.design__cards li {
     width: 40%;
     display: flex;
+}
+
+.site__card {
+    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     padding: 1.5rem 1.5rem 2rem 1.5rem;
     border: 1px solid rgb(221 221 221 / .8);
@@ -1009,12 +1023,11 @@ hr {
     color: #000;
     gap: 26px;
     background: #f5f5f5;
+    width: 100%;
 }
 
 .site__card img {
     width: 100%;
-    max-width: 400px;
-    height: 320px;
     object-fit: cover;
     transition: transform 0.4s ease;
     border-radius: 16px
@@ -1064,7 +1077,7 @@ hr {
 
 .design__card {
     background-color: #f5f5f5;
-    width: 40%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1089,7 +1102,6 @@ hr {
 
 .design__card img {
     width: 100%;
-    max-width: 466px;
     height: auto;
     object-fit: cover;
     border-radius: 1rem;
@@ -1116,8 +1128,9 @@ hr {
         display: none
     }
 
-    .swiper__card {
-        width: 90%
+    .licence figure {
+        width: 100%;
+        display: flex;
     }
 
     .uslugi .cards__left {
@@ -1128,9 +1141,13 @@ hr {
         width: 90%
     }
 
-    .site__card,
-    .design__card {
-        width: 80% !important
+
+    .site__cards li,
+    .slider__list li,
+    .design__cards li {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;    
     }
 
     .uslugi .content,

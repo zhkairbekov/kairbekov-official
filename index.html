@@ -3,7 +3,7 @@
 
 <head>
     <!-- Yandex.Metrika -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         (function (m, e, t, r, i, k, a) {
             m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
             m[i].l = 1 * new Date();
@@ -21,7 +21,7 @@
             accurateTrackBounce: true,
             webvisor: true
         });
-    </script>
+    </script> -->
     <!-- /Yandex.Metrika -->
 
     <!-- Основные мета-теги -->
@@ -56,10 +56,9 @@
     <meta name="twitter:image" content="https://kairbekov-official.netlify.app/img/mockup/kairbekov-official.webp">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png"
-        href="/https://kairbekov-official.netlify.app/img/ico/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml"
-        href="/https://kairbekov-official.netlify.app/img/ico/favicon.svg" />
+    <link rel="icon" type="image/png" href="/https://kairbekov-official.netlify.app/img/ico/favicon-96x96.png"
+        sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/https://kairbekov-official.netlify.app/img/ico/favicon.svg" />
     <link rel="shortcut icon" href="/https://kairbekov-official.netlify.app/img/ico/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180"
         href="/https://kairbekov-official.netlify.app/img/ico/apple-touch-icon.png" />
@@ -78,32 +77,7 @@
 
     <!-- Preload Images -->
     <link rel="preload" as="image" href="img/background/top-bg.webp">
-    <link rel="preload" as="image" href="img/background/1.webp">
     <link rel="preload" as="image" href="img/background/uslugi.webp">
-    <link rel="preload" as="image" href="img/background/verstka-bg.webp">
-    <link rel="preload" as="image" href="img/slider/1.webp">
-    <link rel="preload" as="image" href="img/slider/2.webp">
-    <link rel="preload" as="image" href="img/slider/3.webp">
-    <link rel="preload" as="image" href="img/slider/4.webp">
-    <link rel="preload" as="image" href="img/mockup/image78.webp">
-    <link rel="preload" as="image" href="img/mockup/library.webp">
-    <link rel="preload" as="image" href="img/mockup/locations.webp">
-    <link rel="preload" as="image" href="img/mockup/kairbekov-official.webp">
-    <link rel="preload" as="image" href="img/sites/saukele.webp">
-    <link rel="preload" as="image" href="img/sites/library.webp">
-    <link rel="preload" as="image" href="img/sites/kazahLocations.webp">
-    <link rel="preload" as="image" href="img/designs/di.webp">
-    <link rel="preload" as="image" href="img/designs/Айлин.webp">
-    <link rel="preload" as="image" href="img/designs/Тлегенова-Алтын.webp">
-    <link rel="preload" as="image" href="img/designs/1.webp">
-    <link rel="preload" as="image" href="img/designs/Frame411.webp">
-    <link rel="preload" as="image" href="img/designs/Алина-Малина.webp">
-    <link rel="preload" as="image" href="img/designs/Инстасибирь.webp">
-    <link rel="preload" as="image" href="img/designs/15декабряконцерт.webp">
-    <link rel="preload" as="image" href="img/designs/Отчетныйконцерт2023.webp">
-    <link rel="preload" as="image" href="img/designs/Предметка.webp">
-    <link rel="preload" as="image" href="img/license/adminBase.png">
-    <link rel="preload" as="image" href="img/license/contentManager.png">
 </head>
 
 <body id="wrapper">
@@ -111,17 +85,24 @@
         <div><img src="https://mc.yandex.ru/watch/101019348" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
 
-    <section class="section_1" id="start_window">
+    <section class="section_1" id="start_window" aria-label="Введение — разработка сайтов и графический дизайн">
         <div class="start_window">
             <div class="blure vh-100 vw-100">
                 <div class="container">
-                    <div class="content">
-                        <img src="img/me.webp" alt="" id="top_zhan" class="top-zhan">
-                        <img src="img/ico/top-logo.png" alt="" id="top_logo" class="top-logo">
+                    <div class="content" role="banner">
+                        <!-- Фото дизайнера -->
+                        <img src="img/me.webp" alt="Жанат Каирбеков — веб-разработчик и графический дизайнер"
+                            id="top_zhan" class="top-zhan" loading="lazy">
+
+                        <!-- Логотип -->
+                        <img src="img/ico/top-logo.png" alt="Логотип Kairbekov Official" id="top_logo" class="top-logo"
+                            loading="lazy">
+
                         <div class="text z-index-100">
                             <h1 class="monoton-regular">KAIRBEKOV</h1>
                             <p class="akony-font">Разработка сайтов<br>и графический дизайн</p>
-                            <a target="_blank" href="#services">Заказать</a>
+                            <a rel="noopener noreferrer" target="_blank" href="#services" class="btn-order"
+                                aria-label="Перейти к разделу услуг и заказать">Заказать</a>
                         </div>
                     </div>
                 </div>
@@ -131,46 +112,43 @@
     <section class="razdel-bottom mb-2"></section>
     <header id="header" class="section_2 w-100 pt-2 pb-2 z-index-100">
         <div class="container">
-            <nav class="navbar">
+            <nav class="navbar" role="navigation" aria-label="Основное меню сайта">
                 <div class="container w-100">
                     <div class="navbar__wrap w-100">
-                        <a href="#wrapper" class="logo">
-                            <img class="header__logo" src="img/ico/logo.png" alt="logo">
+
+                        <!-- Логотип -->
+                        <a href="#wrapper" class="logo" aria-label="Перейти на главную страницу">
+                            <img class="header__logo" src="img/ico/logo.png" alt="Логотип Kairbekov Official"
+                                loading="lazy">
                         </a>
+
+                        <!-- Бургер-меню -->
                         <div class="hamb">
-                            <div class="hamb__field" id="hamb">
+                            <button class="hamb__field" id="hamb" aria-label="Открыть меню" aria-controls="menu"
+                                aria-expanded="false">
                                 <span class="bar"></span>
                                 <span class="bar"></span>
                                 <span class="bar"></span>
-                            </div>
+                            </button>
                         </div>
+
+                        <!-- Меню -->
                         <ul class="menu justify-content-end" id="menu">
-                            <li class="text-15px">
-                                <a class="link" href="#wrapper">Главная</a>
-                            </li>
-                            <li class="text-15px">
-                                <a class="resources link" href="#about">Обо мне</a>
-                            </li>
-                            <li class="text-15px">
-                                <a class="services link" href="#services">Услуги</a>
-                            </li>
-                            <li class="text-15px">
-                                <a class="services link" href="#portfolio">Сайты</a>
-                            </li>
-                            <li class="text-15px">
-                                <a class="services link" href="#designs">Дизайны</a>
-                            </li>
-                            <li class="text-15px">
-                                <a class="about link" href="#licenses">Сертификаты</a>
-                            </li>
-                            <li class="text-15px">
-                                <a class="about link" href="#contacts">Контакты</a>
-                            </li>
+                            <li class="text-15px"><a class="link" href="#wrapper">Главная</a></li>
+                            <li class="text-15px"><a class="resources link" href="#about">Обо мне</a></li>
+                            <li class="text-15px"><a class="services link" href="#services">Услуги</a></li>
+                            <li class="text-15px"><a class="services link" href="#portfolio">Сайты</a></li>
+                            <li class="text-15px"><a class="services link" href="#designs">Дизайны</a></li>
+                            <li class="text-15px"><a class="about link" href="#licenses">Сертификаты</a></li>
+                            <li class="text-15px"><a class="about link" href="#contacts">Контакты</a></li>
                         </ul>
+
                     </div>
                 </div>
             </nav>
-            <div class="popup blure" id="popup"></div>
+
+            <!-- Попап -->
+            <div class="popup blure" id="popup" aria-hidden="true"></div>
         </div>
     </header>
     <section class="razdel-top mt-3"></section>
@@ -186,11 +164,11 @@
                             <div class="cards__left">
                                 <div>
                                     <img src="img/ico/about-title.png" alt="Иконка раздела 'Обо мне'"
-                                        class="img__about-title">
+                                        class="img__about-title" loading="lazy">
                                 </div>
                                 <div class="card__about d-flex">
                                     <div class="title d-flex">
-                                        <img src="img/ico/about.png" alt="Иконка 'Обо мне'">
+                                        <img src="img/ico/about.png" alt="Иконка 'Обо мне'" loading="lazy">
                                         <h3 class="mb-0">Обо мне</h3>
                                     </div>
                                     <ul>
@@ -217,7 +195,7 @@
                                 <!-- Навыки -->
                                 <div class="card__skills">
                                     <div class="title d-flex">
-                                        <img src="img/ico/skills.png" alt="Иконка 'Навыки'">
+                                        <img src="img/ico/skills.png" alt="Иконка 'Навыки'" loading="lazy">
                                         <h3 class="mb-0">Навыки</h3>
                                     </div>
                                     <ul>
@@ -239,7 +217,7 @@
                                 <!-- Опыт -->
                                 <div class="card__experience">
                                     <div class="title d-flex">
-                                        <img src="img/ico/experience.png" alt="Иконка 'Опыт'">
+                                        <img src="img/ico/experience.png" alt="Иконка 'Опыт'" loading="lazy">
                                         <h3 class="mb-0">Опыт работы</h3>
                                     </div>
                                     <ul>
@@ -265,89 +243,135 @@
         </div>
     </section>
     <section class="razdel-bottom mb-2"></section>
-    <section class="production__section_4" id="services">
+    <section class="production__section_4" id="services" aria-label="Услуги по веб-разработке и дизайну">
         <div class="services">
             <div class="container">
                 <div class="content">
                     <h2 class="title bold">Мои услуги</h2>
                     <hr>
-                    <div class="slider__list w-100">
-                        <a href="tg://resolve?domain=kairbekoff" class="swiper__card">
-                            <img src="img/slider/1.webp" alt="" class="w-100">
-                            <h3 class="w-100">
-                                Разработка сайта<br>Landing Page
-                            </h3>
-                            <p class="w-100">
-                                Разработаю для вас современный, уникальный и креативный сайт с продуманным дизайном,
-                                который привлечёт внимание пользователей и поспособствует росту вашего бизнеса.
-                            </p>
-                            <p class="swiper__card__button">Заказать</p>
-                        </a>
-                        <a href="tg://resolve?domain=kairbekoff" class="swiper__card">
-                            <img src="img/slider/2.webp" alt="" class="w-100">
-                            <h3 class="w-100">Разработка<br>логотипа</h3>
-                            <p class="w-100">
-                                Создам запоминающийся и уникальный логотип, который отразит суть вашего бренда и
-                                подчеркнёт его ценности. Гарантирую результат, который станет визитной карточкой
-                                вашего бизнеса.
-                            </p>
-                            <p class="swiper__card__button">Заказать</p>
-                        </a>
-                        <a href="tg://resolve?domain=kairbekoff" class="swiper__card">
-                            <img src="img/slider/3.webp" alt="" class="w-100">
-                            <h3 class="w-100">Оформление<br>презентации</h3>
-                            <p class="w-100">
-                                Создам профессиональную презентацию для различных целей: бизнес-идеи, творческие
-                                проекты, праздничные мероприятия. Гарантирую качественный и яркий результат, который
-                                подчеркнёт суть вашего посыла.
-                            </p>
-                            <p class="swiper__card__button">Заказать</p>
-                        </a>
-                        <a href="tg://resolve?domain=kairbekoff" class="swiper__card">
-                            <img src="img/slider/4.webp" alt="" class="w-100">
-                            <h3 class="w-100">Дизайн постера,<br>плаката или афиши</h3>
-                            <p class="w-100">
-                                Разработаю уникальный и запоминающийся плакат, который привлечёт внимание к вашему
-                                событию или проекту. Эффектный дизайн вдохновит вашу аудиторию и подчеркнёт
-                                значимость идеи.
-                            </p>
-                            <p class="swiper__card__button">Заказать</p>
-                        </a>
-                    </div>
+
+                    <ul class="slider__list w-100" style="list-style: none; padding-left: 0;">
+
+                        <!-- Карточка 1 -->
+                        <li>
+                            <a href="tg://resolve?domain=kairbekoff" class="swiper__card" rel="noopener"
+                                aria-label="Заказать разработку сайта Landing Page">
+                                <img src="img/slider/1.webp" alt="Разработка сайта Landing Page" class="w-100"
+                                    loading="lazy">
+                                <h3 class="w-100">Разработка сайта Landing Page</h3>
+                                <p class="w-100">
+                                    Создам уникальный, адаптивный и современный сайт с индивидуальным дизайном,
+                                    направленным на увеличение продаж и привлечение клиентов.
+                                </p>
+                                <p class="swiper__card__button">Заказать</p>
+                            </a>
+                        </li>
+
+                        <!-- Карточка 2 -->
+                        <li>
+                            <a href="tg://resolve?domain=kairbekoff" class="swiper__card" rel="noopener"
+                                aria-label="Заказать разработку логотипа">
+                                <img src="img/slider/2.webp" alt="Разработка фирменного логотипа" class="w-100"
+                                    loading="lazy">
+                                <h3 class="w-100">Разработка логотипа</h3>
+                                <p class="w-100">
+                                    Разработаю узнаваемый логотип с уникальной идеей, отражающий ценности вашего бренда
+                                    и усиливающий визуальный образ компании.
+                                </p>
+                                <p class="swiper__card__button">Заказать</p>
+                            </a>
+                        </li>
+
+                        <!-- Карточка 3 -->
+                        <li>
+                            <a href="tg://resolve?domain=kairbekoff" class="swiper__card" rel="noopener"
+                                aria-label="Заказать оформление презентации">
+                                <img src="img/slider/3.webp" alt="Оформление презентации" class="w-100" loading="lazy">
+                                <h3 class="w-100">Оформление презентации</h3>
+                                <p class="w-100">
+                                    Дизайн презентации для бизнеса, выступлений или проектов. Яркий, лаконичный и
+                                    профессиональный подход к подаче информации.
+                                </p>
+                                <p class="swiper__card__button">Заказать</p>
+                            </a>
+                        </li>
+
+                        <!-- Карточка 4 -->
+                        <li>
+                            <a href="tg://resolve?domain=kairbekoff" class="swiper__card" rel="noopener"
+                                aria-label="Заказать дизайн постера или афиши">
+                                <img src="img/slider/4.webp" alt="Дизайн постера, афиши или плаката" class="w-100"
+                                    loading="lazy">
+                                <h3 class="w-100">Дизайн постера, плаката или афиши</h3>
+                                <p class="w-100">
+                                    Разработка афиш, плакатов и постеров с креативной визуальной подачей для
+                                    мероприятий, рекламы и проектов.
+                                </p>
+                                <p class="swiper__card__button">Заказать</p>
+                            </a>
+                        </li>
+
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
     <section class="razdel-top mt-3"></section>
-    <section class="section_4" id="portfolio">
+    <section class="section_4" id="portfolio" aria-label="Портфолио сайтов">
         <div class="sites">
             <div class="blure w-100 h-100">
                 <div class="container">
                     <div class="content">
                         <h2 class="title bold">Мои сайты</h2>
                         <hr>
-                        <div class="site__cards w-100">
-                            <a class="site__card openModal" data-modal-id="myModal1">
-                                <img src="img/mockup/image78.webp" alt="">
-                                <h4>Saukele.ru</h4>
-                                <p class="site__card__open__button">Посмотреть</p>
-                            </a>
-                            <a class="site__card openModal" data-modal-id="myModal2">
-                                <img src="img/mockup/library.webp" alt="">
-                                <h4>Библиотека на JS</h4>
-                                <p class="site__card__open__button">Посмотреть</p>
-                            </a>
-                            <a class="site__card openModal" data-modal-id="myModal3">
-                                <img src="img/mockup/locations.webp" alt="">
-                                <h4>Культурный Каталог Казахстана</h4>
-                                <p class="site__card__open__button">Посмотреть</p>
-                            </a>
-                            <a class="site__card openModal" data-modal-id="myModal4">
-                                <img src="img/mockup/kairbekov-official.webp" alt="">
-                                <h4>Kairbekov official</h4>
-                                <p class="site__card__open__button">Посмотреть</p>
-                            </a>
-                        </div>
+                        <ul class="site__cards w-100" style="list-style: none; padding: 0; margin: 0;">
+
+                            <!-- Saukele.ru -->
+                            <li>
+                                <a class="site__card openModal" data-modal-id="myModal1"
+                                    aria-label="Открыть проект Saukele.ru">
+                                    <img src="img/mockup/image78.webp"
+                                        alt="Главная страница сайта Saukele.ru — магазин национальных аксессуаров"
+                                        loading="lazy">
+                                    <h4>Saukele.ru</h4>
+                                    <p class="site__card__open__button">Посмотреть проект</p>
+                                </a>
+                            </li>
+
+                            <!-- Библиотека на JS -->
+                            <li>
+                                <a class="site__card openModal" data-modal-id="myModal2"
+                                    aria-label="Открыть проект Библиотека на JavaScript">
+                                    <img src="img/mockup/library.webp"
+                                        alt="Интерфейс сайта цифровой библиотеки на JavaScript" loading="lazy">
+                                    <h4>Библиотека на JS</h4>
+                                    <p class="site__card__open__button">Посмотреть проект</p>
+                                </a>
+                            </li>
+
+                            <!-- Культурный Каталог Казахстана -->
+                            <li>
+                                <a class="site__card openModal" data-modal-id="myModal3"
+                                    aria-label="Открыть проект Культурный Каталог Казахстана">
+                                    <img src="img/mockup/locations.webp"
+                                        alt="Главная страница каталога культурных мест Казахстана" loading="lazy">
+                                    <h4>Культурный Каталог Казахстана</h4>
+                                    <p class="site__card__open__button">Посмотреть проект</p>
+                                </a>
+                            </li>
+
+                            <!-- Kairbekov official -->
+                            <li>
+                                <a class="site__card openModal" data-modal-id="myModal4"
+                                    aria-label="Открыть проект Kairbekov Official — персональный сайт">
+                                    <img src="img/mockup/kairbekov-official.webp"
+                                        alt="Превью персонального сайта Kairbekov Official" loading="lazy">
+                                    <h4>Kairbekov official</h4>
+                                    <p class="site__card__open__button">Посмотреть проект</p>
+                                </a>
+                            </li>
+
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -359,13 +383,15 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title mb-0" id="exampleModalLabel1">Saukele.ru</h5>
-                    <span class="closeModal" data-modal-id="myModal1" style="float: right">&times;</span>
+                    <span title="Закрыть" class="closeModal" data-modal-id="myModal1"
+                        style="float: right">&times;</span>
                 </div>
                 <hr>
                 <div class="modal-body">
-                    <a target="_blank" href="https://www.kairbekoff.kz/saukele/"
+                    <a rel="noopener noreferrer" target="_blank" href="https://www.kairbekoff.kz/saukele/"
                         class="modal__open_site__button">Открыть сайт</a>
-                    <a target="_blank" href="https://github.com/123456789255/saukele_online-shop"
+                    <a rel="noopener noreferrer" target="_blank"
+                        href="https://github.com/123456789255/saukele_online-shop"
                         class="modal__open_site__button">Открыть github проекта</a>
                     <div class="modal-locations">
                         <h2>🛍️ Saukele.ru</h2>
@@ -404,17 +430,11 @@
                         <p>Омская Региональная Общественная Организация «Казахи Омска» </p>
                         <p>Разработчик: Каирбеков Жанат</p>
                         <p>См. файл <a href="https://github.com/123456789255/saukele_online-shop/blob/main/LICENSE"
-                                target="_blank">LICENSE</a> для подробностей.</p>
+                                rel="noopener noreferrer" target="_blank">LICENSE</a> для подробностей.</p>
 
                     </div>
-                    <a target="_blank" href="https://www.kairbekoff.kz/saukele/">
-                        <img src="img/site-colors/" alt="">
-                    </a>
-                    <a target="_blank" href="https://www.kairbekoff.kz/saukele/">
-                        <img src="img/mockup/image78.webp" alt="">
-                    </a>
-                    <a target="_blank" href="https://www.kairbekoff.kz/saukele/">
-                        <img src="img/sites/saukele.webp" alt="">
+                    <img src="img/mockup/image78.webp" alt="Мокап сайта Saukele" loading="lazy">
+                    <img src="img/sites/saukele.webp" alt="Скриншоты интерфейса сайта Saukele.ru" loading="lazy">
                     </a>
                 </div>
             </div>
@@ -423,14 +443,18 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title mb-0" id="exampleModalLabel2">Цифровая библиотека на JS</h5>
-                    <span class="closeModal" data-modal-id="myModal2" style="float: right">&times;</span>
+                    <span title="Закрыть" class="closeModal" data-modal-id="myModal2"
+                        style="float: right">&times;</span>
                 </div>
                 <hr>
                 <div class="modal-body">
-                    <a target="_blank" href="https://kairbekov-kazah-library.netlify.app/"
-                        class="modal__open_site__button">Открыть сайт</a>
-                    <a target="_blank" href="https://github.com/123456789255/kazakh-library"
-                        class="modal__open_site__button">Открыть github проекта</a>
+                    <a rel="noopener noreferrer" target="_blank" href="https://kairbekov-kazah-library.netlify.app/"
+                        class="modal__open_site__button"
+                        aria-label="Открыть сайт цифровой библиотеки казахстанской литературы на JavaScript">Открыть
+                        сайт</a>
+                    <a rel="noopener noreferrer" target="_blank" href="https://github.com/123456789255/kazakh-library"
+                        class="modal__open_site__button"
+                        aria-label="Открыть GitHub репозиторий проекта цифровой библиотеки">Открыть github проекта</a>
                     <div class="container">
                         <div class="modal-library">
                             <h2>📚 Цифровая библиотека казахстанской литературы</h2>
@@ -652,7 +676,7 @@
                             <h3>📄 Лицензия</h3>
                             <p>Проект распространяется под лицензией <strong>MIT</strong>.<br>См. файл
                                 <a href="https://github.com/123456789255/kazakh-library/blob/main/LICENSE"
-                                    target="_blank">LICENSE</a> для подробностей.
+                                    rel="noopener noreferrer" target="_blank">LICENSE</a> для подробностей.
                             </p>
 
                             <hr>
@@ -662,8 +686,9 @@
                             <p><em>Разработка: @kairbekov.official • 2025</em></p>
                         </div>
                     </div>
-                    <img src="img/mockup/library.webp" alt="">
-                    <img src="img/sites/library.webp" alt="">
+                    <img src="img/mockup/library.webp" alt="Мокап цифровой библиотеки казахстанской литературы"
+                        loading="lazy">
+                    <img src="img/sites/library.webp" alt="Скриншоты интерфейса цифровой библиотеки" loading="lazy">
                 </div>
             </div>
         </div>
@@ -675,9 +700,10 @@
                 </div>
                 <hr>
                 <div class="modal-body">
-                    <a target="_blank" href="https://kazakhstan-project.netlify.app"
+                    <a rel="noopener noreferrer" target="_blank" href="https://kazakhstan-project.netlify.app"
                         class="modal__open_site__button">Открыть сайт</a>
-                    <a target="_blank" href="https://github.com/123456789255/kazakhstan-project"
+                    <a rel="noopener noreferrer" target="_blank"
+                        href="https://github.com/123456789255/kazakhstan-project"
                         class="modal__open_site__button">Открыть github проекта</a>
                     <div class="container">
                         <div class="modal-locations">
@@ -788,8 +814,9 @@
                                     Казахстан.</strong></p>
                         </div>
                     </div>
-                    <img src="img/mockup/locations.webp" alt="">
-                    <img src="img/sites/kazahLocations.webp" alt="">
+                    <img loading="lazy" src="img/mockup/locations.webp" alt="Мокап сайта Культурный Каталог Казахстана">
+                    <img loading="lazy" src="img/sites/kazahLocations.webp"
+                        alt="Скриншот страницы с достопримечательностями Казахстана">
                 </div>
             </div>
         </div>
@@ -801,7 +828,8 @@
                 </div>
                 <hr>
                 <div class="modal-body">
-                    <a target="_blank" href="https://github.com/123456789255/kairbekov-official"
+                    <a rel="noopener noreferrer" target="_blank"
+                        href="https://github.com/123456789255/kairbekov-official"
                         class="modal__open_site__button">Открыть github проекта</a>
                     <div class="container">
                         <div class="modal-locations">
@@ -860,11 +888,12 @@
                             <ul>
                                 <li>📞 Россия: <a href="tel:+79620473900">+7 (962) 047-39-00</a></li>
                                 <li>📞 Казахстан: <a href="tel:+77053062873">+7 (705) 306-28-73</a></li>
-                                <li>💬 Telegram: <a href="https://t.me/kairbekoff" target="_blank">@kairbekoff</a>
+                                <li>💬 Telegram: <a href="https://t.me/kairbekoff" rel="noopener noreferrer"
+                                        target="_blank">@kairbekoff</a>
                                 </li>
                                 <li>📸 Instagram: <a href="https://www.instagram.com/kairbekov.official"
-                                        target="_blank">@kairbekov.official</a></li>
-                                <li>📸 GitHub: <a href="https://github.com/123456789255"
+                                        rel="noopener noreferrer" target="_blank">@kairbekov.official</a></li>
+                                <li>📸 GitHub: <a href="https://github.com/123456789255" rel="noopener noreferrer"
                                         target="_blank">123456789255</a></li>
                             </ul>
 
@@ -881,152 +910,251 @@
 
                         </div>
                     </div>
-                    <img src="img/mockup/kairbekov-official.webp" alt="">
+                    <img src="img/mockup/kairbekov-official.webp"
+                        alt="Главная страница персонального сайта-портфолио Жаната Каирбекова">
                 </div>
             </div>
         </div>
     </section>
-    <section class="section_5" id="designs">
+    <section class="section_5" id="designs" aria-label="Портфолио дизайн-проектов">
         <div class="designs">
             <div class="container">
                 <div class="content">
                     <h2 class="title bold">Мои дизайн проекты</h2>
                     <hr>
-                    <div class="design__cards w-100">
-                        <div class="design__card">
-                            <img src="img/designs/di.webp" alt="">
-                            <h4>
-                                Афиша мероприятия "Презентация премиального клуба ФЕНИКС"
-                            </h4>
-                        </div>
-                        <div class="design__card">
-                            <img src="img/designs/Айлин.webp" alt="">
-                            <h4>
-                                Ветринный банер для салона люксовой национальной одежды "Айлин"
-                                <br>
-                                <a target="_blank" href="https://www.instagram.com/ailin_etno"
-                                    class="design_card__url">@ailin_etno</a>
-                            </h4>
-                        </div>
-                        <div class="design__card">
-                            <img src="img/designs/1.webp" alt="">
-                            <h4>
-                                Карточка открытия наставничества для<br>Арина Чумак<br>
-                                <a target="_blank" href="https://www.instagram.com/chumak_arina"
-                                    class="design_card__url">@chumak_arina</a>
-                            </h4>
-                        </div>
-                        <div class="design__card">
-                            <img src="img/designs/Frame411.webp" alt="">
-                            <h4>
-                                Карточка афиша выбинара для Салии Днищевой<br>
-                                <a target="_blank" href="https://www.instagram.com/mrs_saliya"
-                                    class="design_card__url">@mrs_saliya</a>
-                            </h4>
-                        </div>
-                        <div class="design__card">
-                            <img src="img/designs/Тлегенова-Алтын.webp" alt="">
-                            <h4>
-                                Логотип для Тлегенова Алтын<br>
-                                <a target="_blank" href="https://www.instagram.com/tlegenova_altyn_"
-                                    class="design_card__url">@tlegenova_altyn_</a>
-                            </h4>
-                        </div>
-                        <div class="design__card">
-                            <img src="img/designs/Алина-Малина.webp" alt="">
-                            <h4>
-                                Логотип для Алина-Малина<br>
-                                <a target="_blank" href="https://www.instagram.com/malina_alii"
-                                    class="design_card__url">@malina_alii</a>
-                            </h4>
-                        </div>
-                        <div class="design__card">
-                            <img src="img/designs/Инстасибирь.webp" alt="">
-                            <h4>
-                                Афиша крупного мероприятия Инстасибирь<br>
-                                <a target="_blank" href="https://www.instagram.com/mrs_saliya"
-                                    class="design_card__url">@mrs_saliya</a>
-                                <br>
-                                <a target="_blank" href="https://www.instagram.com/tatiana.kush"
-                                    class="design_card__url">@tatiana.kush</a>
-                            </h4>
-                        </div>
-                        <div class="design__card">
-                            <img src="img/designs/Отчетныйконцерт2023.webp" alt="">
-                            <h4>
-                                Афиша концерта Образцового хореографического коллектива "Ажар" - Навстрече солнцу!
-                            </h4>
-                        </div>
-                        <div class="design__card">
-                            <img src="img/designs/15декабряконцерт.webp" alt="">
-                            <h4>
-                                Афиша концерта Образцового хореографического коллектива "Ажар" - Искусство
-                                объединяет сердца (Приглашенный гость Нурлан Алимжанов)
-                            </h4>
-                        </div>
-                        <div class="design__card">
-                            <img src="img/designs/Предметка.webp" alt="">
-                            <h4>Дизайн карточки товара для Ozon и Wildberries</h4>
-                        </div>
-                    </div>
+                    <ul class="design__cards w-100" style="list-style: none; padding: 0; margin: 0;">
+
+                        <!-- Афиша Презентация клуба ФЕНИКС -->
+                        <li>
+                            <figure class="design__card">
+                                <img src="img/designs/di.webp"
+                                    alt="Афиша мероприятия «Презентация премиального клуба ФЕНИКС»" loading="lazy">
+                                <figcaption>
+                                    <h4>Афиша мероприятия «Презентация премиального клуба ФЕНИКС»</h4>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <!-- Баннер Айлин -->
+                        <li>
+                            <figure class="design__card">
+                                <img src="img/designs/Айлин.webp"
+                                    alt="Витринный баннер для салона люксовой национальной одежды «Айлин»"
+                                    loading="lazy">
+                                <figcaption>
+                                    <h4>
+                                        Витринный баннер для салона «Айлин»<br>
+                                        <a href="https://www.instagram.com/ailin_etno" target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="Перейти в Instagram салона Айлин">@ailin_etno</a>
+                                    </h4>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <!-- Карточка для Арины Чумак -->
+                        <li>
+                            <figure class="design__card">
+                                <img src="img/designs/1.webp" alt="Карточка открытия наставничества для Арины Чумак"
+                                    loading="lazy">
+                                <figcaption>
+                                    <h4>
+                                        Карточка открытия наставничества для Арины Чумак<br>
+                                        <a href="https://www.instagram.com/chumak_arina" target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="Перейти в Instagram Арины Чумак">@chumak_arina</a>
+                                    </h4>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <!-- Афиша вебинара Салии Днищевой -->
+                        <li>
+                            <figure class="design__card">
+                                <img src="img/designs/Frame411.webp" alt="Карточка афиши вебинара для Салии Днищевой"
+                                    loading="lazy">
+                                <figcaption>
+                                    <h4>
+                                        Карточка афиши вебинара для Салии Днищевой<br>
+                                        <a href="https://www.instagram.com/mrs_saliya" target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="Перейти в Instagram Салии Днищевой">@mrs_saliya</a>
+                                    </h4>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <!-- Логотип Тлегенова Алтын -->
+                        <li>
+                            <figure class="design__card">
+                                <img src="img/designs/Тлегенова-Алтын.webp" alt="Логотип для Тлегенова Алтын"
+                                    loading="lazy">
+                                <figcaption>
+                                    <h4>
+                                        Логотип для Тлегенова Алтын<br>
+                                        <a href="https://www.instagram.com/tlegenova_altyn_" target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="Перейти в Instagram Тлегеновой Алтын">@tlegenova_altyn_</a>
+                                    </h4>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <!-- Логотип Алина-Малина -->
+                        <li>
+                            <figure class="design__card">
+                                <img src="img/designs/Алина-Малина.webp" alt="Логотип для бренда Алина-Малина"
+                                    loading="lazy">
+                                <figcaption>
+                                    <h4>
+                                        Логотип для Алина-Малина<br>
+                                        <a href="https://www.instagram.com/malina_alii" target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="Перейти в Instagram Алина-Малина">@malina_alii</a>
+                                    </h4>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <!-- Афиша Инстасибирь -->
+                        <li>
+                            <figure class="design__card">
+                                <img src="img/designs/Инстасибирь.webp" alt="Афиша крупного мероприятия Инстасибирь"
+                                    loading="lazy">
+                                <figcaption>
+                                    <h4>
+                                        Афиша крупного мероприятия Инстасибирь<br>
+                                        <a href="https://www.instagram.com/mrs_saliya" target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="Перейти в Instagram Салии Днищевой">@mrs_saliya</a><br>
+                                        <a href="https://www.instagram.com/tatiana.kush" target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="Перейти в Instagram Татьяны Куш">@tatiana.kush</a>
+                                    </h4>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <!-- Афиша концерта Ажар — Навстречу солнцу -->
+                        <li>
+                            <figure class="design__card">
+                                <img src="img/designs/Отчетныйконцерт2023.webp"
+                                    alt="Афиша отчётного концерта коллектива Ажар «Навстречу солнцу»" loading="lazy">
+                                <figcaption>
+                                    <h4>Афиша концерта коллектива «Ажар» — Навстречу солнцу!</h4>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <!-- Афиша концерта Ажар — Искусство объединяет сердца -->
+                        <li>
+                            <figure class="design__card">
+                                <img src="img/designs/15декабряконцерт.webp"
+                                    alt="Афиша концерта «Искусство объединяет сердца» с приглашением Нурлана Алимжанова"
+                                    loading="lazy">
+                                <figcaption>
+                                    <h4>Афиша концерта «Искусство объединяет сердца»</h4>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <!-- Карточка товара для Ozon и Wildberries -->
+                        <li>
+                            <figure class="design__card">
+                                <img src="img/designs/Предметка.webp"
+                                    alt="Дизайн карточки товара для площадок Ozon и Wildberries" loading="lazy">
+                                <figcaption>
+                                    <h4>Дизайн карточки товара для Ozon и Wildberries</h4>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
     <section class="licenses container" id="licenses">
-        <h2 class="title bold">Сертификаты</h2>
+        <h2 class="title bold">Мои сертификаты и подтверждения квалификации</h2>
         <hr>
         <div class="licence">
-            <a href="img/license/pdf/Контент-менеджер.pdf" target="_blank"><img src="img/license/contentManager.png"
-                    alt=""></a>
-            <a href="img/license/pdf/Администратор-базовый.pdf" target="_blank"><img src="img/license/adminBase.png"
-                    alt=""></a>
+            <figure>
+                <a href="img/license/pdf/Контент-менеджер.pdf" rel="noopener noreferrer" target="_blank">
+                    <img src="img/license/contentManager.png"
+                        alt="Сертификат о прохождении курса контент-менеджера – повышение квалификации" loading="lazy">
+
+                    <figcaption>Сертификат «Контент-менеджер»: управление контентом, продвижение и маркетинг
+                    </figcaption>
+                </a>
+            </figure>
+
+            <figure>
+                <a href="img/license/pdf/Администратор-базовый.pdf" rel="noopener noreferrer" target="_blank">
+                    <img src="img/license/adminBase.png"
+                        alt="Базовый сертификат администратора сайта – основы администрирования" loading="lazy">
+                    <figcaption>Сертификат «Администратор базового уровня»: навыки работы с сайтами и системами
+                        управления
+                    </figcaption>
+                </a>
+            </figure>
         </div>
     </section>
     <section class="razdel-top mt-3"></section>
-    <section class="section_6" id="contacts">
+    <footer class="section_6" id="contacts" aria-label="Контактная информация">
         <div class="about_contacts">
             <div class="blure w-100 h-100 d-flex flex-column">
                 <div class="container w-100">
                     <div class="content w-100">
-                        <h2 class="title bold">Контакты</h2>
+                        <h2 class="title bold">Контакты для связи</h2>
                         <hr>
-                        <div class="about_contacts__text w-100">
-                            <a href="https://github.com/123456789255" target="_blank"
-                                class="contact_1 contact__point d-flex">
-                                <img src="img/ico/github.png" alt="">
-                                <p>GitHub</p>
+                        <address class="about_contacts__text w-100">
+                            <a href="https://github.com/123456789255" rel="noopener noreferrer" target="_blank"
+                                class="contact_1 contact__point d-flex" title="Перейти на профиль GitHub">
+                                <img src="img/ico/github.png"
+                                    alt="Профиль GitHub графического дизайнера и веб-разработчика" loading="lazy">
+                                <p>GitHub: 123456789255</p>
                             </a>
-                            <a href="https://wa.me/77053062873" class="contact_1 contact__point d-flex">
-                                <img src="img/ico/kazakhstan.png" alt="">
-                                <p>+7(705)306 28-73</p>
+
+                            <a href="https://wa.me/77053062873" class="contact_1 contact__point d-flex"
+                                title="Написать в WhatsApp">
+                                <img src="img/ico/kazakhstan.png" alt="Иконка Казахстана – телефон для связи в WhatsApp"
+                                    loading="lazy">
+                                <p>+7 (705) 306 28-73</p>
                             </a>
-                            <a target="_blank" href="tg://resolve?domain=kairbekoff"
-                                class="contact_2 contact__point d-flex">
-                                <img src="img/ico/telegram.png" alt="">
-                                <p>kairbekoff</p>
+
+                            <a href="tg://resolve?domain=kairbekoff" rel="noopener noreferrer" target="_blank"
+                                class="contact_2 contact__point d-flex" title="Написать в Telegram">
+                                <img src="img/ico/telegram.png" alt="Telegram-аккаунт: kairbekoff" loading="lazy">
+                                <p>Telegram: @kairbekoff</p>
                             </a>
-                            <a target="_blank" href="https://www.instagram.com/kairbekov.official"
-                                class="contact_3 contact__point d-flex">
-                                <img src="img/ico/instagram.png" alt="">
-                                <p>kairbekov.official</p>
+
+                            <a href="https://www.instagram.com/kairbekov.official" rel="noopener noreferrer"
+                                target="_blank" class="contact_3 contact__point d-flex"
+                                title="Instagram-портфолио дизайнера">
+                                <img src="img/ico/instagram.png" alt="Instagram-профиль дизайнера: kairbekov.official"
+                                    loading="lazy">
+                                <p>Instagram: @kairbekov.official</p>
                             </a>
-                        </div>
+                        </address>
                     </div>
+
                     <footer id="footer">
                         <div class="footer__content flex-column">
                             <p>
-                                «Facebook/Instagram — проект Meta Platforms Inc., деятельность которой в России
-                                запрещена»
+                                Meta Platforms Inc. (Facebook, Instagram) признана экстремистской организацией в РФ, её
+                                деятельность запрещена.
                             </p>
-                            <a target="_blank" href="https://www.instagram.com/kairbekov.official">©2019 creator
-                                <span>@kairbekov.official</span></a>
+                            <a href="https://www.instagram.com/kairbekov.official" rel="noopener noreferrer"
+                                target="_blank" title="Портфолио дизайнера в Instagram">
+                                ©2019 — Личный бренд и портфолио дизайнера <span>@kairbekov.official</span>
+                            </a>
                         </div>
                     </footer>
+
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="script.js"></script>
