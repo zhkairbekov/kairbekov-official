@@ -68,24 +68,27 @@
         }
   </script>
 
-    <!-- Yandex.Metrika -->
+    <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function (m, e, t, r, i, k, a) {
             m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
             m[i].l = 1 * new Date();
-            for (var j = 0; j < document.scripts.length; j++) {
-                if (document.scripts[j].src === r) { return; }
-            }
+            for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
             k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-        })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-        ym(101019348, "init", {
+        ym(102157540, "init", {
             clickmap: true,
             trackLinks: true,
             accurateTrackBounce: true,
             webvisor: true
         });
     </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/102157540" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -105,10 +108,6 @@
 </head>
 
 <body id="wrapper">
-    <noscript>
-        <div><img src="https://mc.yandex.ru/watch/101019348" style="position:absolute; left:-9999px;" alt="" /></div>
-    </noscript>
-
     <section class="section_1" id="start_window" aria-label="Введение — разработка сайтов и графический дизайн">
         <div class="start_window">
             <div class="blure vh-100 vw-100">
