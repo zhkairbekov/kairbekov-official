@@ -1,0 +1,25 @@
+{
+  "name": "kairbekov-official",
+  "version": "1.0.0",
+  "description": "Адаптивный и современный персональный сайт-портфолио, созданный с использованием **HTML**, **CSS** и **JavaScript**. Проект разработан для представления информации о себе, своих услугах, проектах, навыках и контактах.",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/123456789255/kairbekov-official.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/123456789255/kairbekov-official/issues"
+  },
+  "homepage": "https://github.com/123456789255/kairbekov-official#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^1.5.0",
+    "grunt-revizor": "^0.1.0"
+  }
+}
