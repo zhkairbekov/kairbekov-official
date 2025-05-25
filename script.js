@@ -3,7 +3,6 @@ const popup = document.querySelector("#popup");
 const menu = document.querySelector("#menu").cloneNode(true);
 const header = document.querySelector("#header");
 const wrapper = document.querySelector("#wrapper");
-const wrapperr = document.querySelector("#wrapperr");
 const top_logo = document.querySelector("#top_logo");
 const top_zhan = document.querySelector("#top_zhan");
 const body = document.body;
@@ -106,12 +105,10 @@ links.forEach((link) => {
 // Modal handling
 function disableBodyScroll() {
     body.classList.add("noscroll");
-    wrapperr.classList.add("noscroll");
 }
 
 function enableBodyScroll() {
     body.classList.remove("noscroll");
-    wrapperr.classList.remove("noscroll");
 }
 
 const openModalLinks = document.getElementsByClassName("openModal");

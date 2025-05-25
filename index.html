@@ -2,15 +2,18 @@
 <html lang="ru">
 
 <head>
-    <!-- Yandex.Metrika counter-->
+    <!-- Yandex.Metrika -->
     <script type="text/javascript">
         (function (m, e, t, r, i, k, a) {
             m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
             m[i].l = 1 * new Date();
-            for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
-            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-        })
-            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+            for (var j = 0; j < document.scripts.length; j++) {
+                if (document.scripts[j].src === r) return;
+            }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1;
+            k.src = r;
+            a.parentNode.insertBefore(k, a);
+        })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
         ym(101019348, "init", {
             clickmap: true,
@@ -19,523 +22,600 @@
             webvisor: true
         });
     </script>
-    <!-- /Yandex.Metrika counter -->
+    <!-- /Yandex.Metrika -->
+
+    <!-- Основные мета-теги -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/ico/top-logo.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Каирбеков Жанат | Графический дизайн и веб-разработка</title>
+    <meta name="description"
+        content="Портфолио графического дизайнера и веб-разработчика Каирбекова Жаната: сайты, логотипы, презентации, афиши. Профессиональный графический дизайн и веб-разработка под ключ.">
+    <meta name="keywords"
+        content="графический дизайн, веб-разработка, разработка сайтов, логотип, разработка логотипа, разработка афиши, афиша, презентации, разработка презентации, сайт, дизайнер Казахстан, дизайнер Омск, дизайнер Россия, Жанат Каирбеков, kairbekov, zhanat, kairbekov zhanat, kairbekov official, kairbekoff, kairbekoff.kz">
+    <meta name="author" content="Жанат Каирбеков">
+
+    <!-- Open Graph (для соцсетей: Facebook, VK и др.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Каирбеков Жанат | Графический дизайнер и веб-разработчик">
+    <meta property="og:description"
+        content="Портфолио веб-разработчика и графического дизайнера: сайты, логотипы, презентации, афиши. Современный подход к визуалу и разработке.">
+    <meta property="og:image" content="https://kairbekov-official.netlify.app/img/mockup/kairbekov-official.webp">
+    <meta property="og:url" content="https://kairbekov-official.netlify.app">
+    <meta property="og:site_name" content="Kairbekov official">
+    <meta property="og:author" content="Жанат Каирбеков">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Каирбеков Жанат | Графический дизайнер и веб-разработчик">
+    <meta name="twitter:description"
+        content="Портфолио веб-разработчика и графического дизайнера: сайты, логотипы, презентации, афиши. Современный подход к визуалу и разработке.">
+    <meta name="twitter:image" content="https://kairbekov-official.netlify.app/img/mockup/kairbekov-official.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png"
+        href="/https://kairbekov-official.netlify.app/img/ico/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml"
+        href="/https://kairbekov-official.netlify.app/img/ico/favicon.svg" />
+    <link rel="shortcut icon" href="/https://kairbekov-official.netlify.app/img/ico/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="/https://kairbekov-official.netlify.app/img/ico/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="kairbekov official" />
+    <link rel="manifest" href="/https://kairbekov-official.netlify.app/img/ico/site.webmanifest" />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+    <!-- Preload Images -->
     <link rel="preload" as="image" href="img/background/top-bg.webp">
     <link rel="preload" as="image" href="img/background/1.webp">
     <link rel="preload" as="image" href="img/background/uslugi.webp">
     <link rel="preload" as="image" href="img/background/verstka-bg.webp">
-    <title>kairbekov official</title>
+    <link rel="preload" as="image" href="img/slider/1.webp">
+    <link rel="preload" as="image" href="img/slider/2.webp">
+    <link rel="preload" as="image" href="img/slider/3.webp">
+    <link rel="preload" as="image" href="img/slider/4.webp">
+    <link rel="preload" as="image" href="img/mockup/image78.webp">
+    <link rel="preload" as="image" href="img/mockup/library.webp">
+    <link rel="preload" as="image" href="img/mockup/locations.webp">
+    <link rel="preload" as="image" href="img/mockup/kairbekov-official.webp">
+    <link rel="preload" as="image" href="img/sites/saukele.webp">
+    <link rel="preload" as="image" href="img/sites/library.webp">
+    <link rel="preload" as="image" href="img/sites/kazahLocations.webp">
+    <link rel="preload" as="image" href="img/designs/di.webp">
+    <link rel="preload" as="image" href="img/designs/Айлин.webp">
+    <link rel="preload" as="image" href="img/designs/Тлегенова-Алтын.webp">
+    <link rel="preload" as="image" href="img/designs/1.webp">
+    <link rel="preload" as="image" href="img/designs/Frame411.webp">
+    <link rel="preload" as="image" href="img/designs/Алина-Малина.webp">
+    <link rel="preload" as="image" href="img/designs/Инстасибирь.webp">
+    <link rel="preload" as="image" href="img/designs/15декабряконцерт.webp">
+    <link rel="preload" as="image" href="img/designs/Отчетныйконцерт2023.webp">
+    <link rel="preload" as="image" href="img/designs/Предметка.webp">
+    <link rel="preload" as="image" href="img/license/adminBase.png">
+    <link rel="preload" as="image" href="img/license/contentManager.png">
 </head>
 
 <body id="wrapper">
     <noscript>
         <div><img src="https://mc.yandex.ru/watch/101019348" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
-    <section class="wrapper" id="wrapperr">
-        <div class="section_1" id="start_window">
-            <div class="start_window">
-                <div class="blure vh-100 vw-100">
-                    <div class="container">
-                        <div class="content">
-                            <img src="img/me.webp" alt="" id="top_zhan" class="top-zhan">
-                            <img src="img/ico/top-logo.png" alt="" id="top_logo" class="top-logo">
-                            <div class="text z-index-100">
-                                <h1 class="monoton-regular">KAIRBEKOV</h1>
-                                <p class="akony-font">Разработка сайтов<br>и графический дизайн</p>
-                                <a target="_blank" href="#services">Заказать</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="razdel-bottom mb-2"></div>
-        <header id="header" class="section_2 w-100 pt-2 pb-2 z-index-100">
-            <div class="container">
-                <nav class="navbar">
-                    <div class="container w-100">
-                        <div class="navbar__wrap w-100">
-                            <a href="#wrapper" class="logo">
-                                <img class="header__logo" src="img/ico/logo.png" alt="logo">
-                            </a>
-                            <div class="hamb">
-                                <div class="hamb__field" id="hamb">
-                                    <span class="bar"></span>
-                                    <span class="bar"></span>
-                                    <span class="bar"></span>
-                                </div>
-                            </div>
-                            <ul class="menu justify-content-end" id="menu">
-                                <li class="text-15px">
-                                    <a class="link" href="#wrapper">Главная</a>
-                                </li>
-                                <li class="text-15px">
-                                    <a class="resources link" href="#about">Обо мне</a>
-                                </li>
-                                <li class="text-15px">
-                                    <a class="services link" href="#services">Услуги</a>
-                                </li>
-                                <li class="text-15px">
-                                    <a class="services link" href="#portfolio">Сайты</a>
-                                </li>
-                                <li class="text-15px">
-                                    <a class="services link" href="#designs">Дизайны</a>
-                                </li>
-                                <li class="text-15px">
-                                    <a class="about link" href="#licenses">Сертификаты</a>
-                                </li>
-                                <li class="text-15px">
-                                    <a class="about link" href="#contacts">Контакты</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-                <div class="popup blure" id="popup"></div>
-            </div>
-        </header>
-        <div class="razdel-top mt-3"></div>
-        <div class="section_3" id="about">
-            <div class="uslugi">
-                <div class="blure w-100 h-100">
-                    <div class="container">
-                        <div class="content">
-                            <h2 class="title bold">Привет, меня зовут Жанат Каирбеков!</h2>
-                            <hr>
-                            <div class="cards">
-                                <div class="cards__left">
-                                    <div>
-                                        <img src="img/ico/about-title.png" alt="" class="img__about-title">
-                                    </div>
-                                    <div class="card__about d-flex">
-                                        <div class="title d-flex">
-                                            <img src="img/ico/about.png" alt="">
-                                            <h3 class="mb-0">Обо мне:</h3>
-                                        </div>
-                                        <ul>
-                                            <li>
-                                                <p>
-                                                    Выпускник Омской академии экономики и предпринимательства,
-                                                    специализация — информационные системы и программирование.
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>Опыт разработки сайтов — более года.</p>
-                                            </li>
-                                            <li>
-                                                <p>Опыт графического дизайна — более двух лет.</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="cards__right">
-                                    <div class="card__skills">
-                                        <div class="title d-flex">
-                                            <img src="img/ico/skills.png" alt="">
-                                            <h3 class="mb-0">Мои навыки:</h3>
-                                        </div>
-                                        <ul>
-                                            <li>
-                                                <p>
-                                                    Программирование: HTML5, CSS, Bootstrap, Laravel, React (в процессе
-                                                    обучения).
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    Дизайн: Figma (высокий уровень), Photoshop (начальный уровень).
-                                                </p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="card__experience">
-                                        <div class="title d-flex">
-                                            <img src="img/ico/experience.png" alt="">
-                                            <h3 class="mb-0">Мой опыт:</h3>
-                                        </div>
-                                        <ul>
-                                            <li>
-                                                <p>Сотрудничество с крупными блогерами из Омска.</p>
-                                            </li>
-                                            <li>
-                                                <p>Партнёр-дизайнер в проекте «Феникс».</p>
-                                            </li>
-                                            <li>
-                                                <p>Дизайнер образцового хореографического коллектива «Ажар» (г. Омск).
-                                                </p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="razdel-bottom mb-2"></div>
-        <div class="production__section_4" id="services">
-            <div class="services">
+
+    <section class="section_1" id="start_window">
+        <div class="start_window">
+            <div class="blure vh-100 vw-100">
                 <div class="container">
                     <div class="content">
-                        <h2 class="title bold">Мои услуги</h2>
-                        <hr>
-                        <div class="slider__list w-100">
-                            <a href="tg://resolve?domain=kairbekoff" class="swiper__card">
-                                <img src="img/slider/1.webp" alt="" class="w-100">
-                                <h3 class="w-100">
-                                    Разработка сайта<br>Landing Page
-                                </h3>
-                                <p class="w-100">
-                                    Разработаю для вас современный, уникальный и креативный сайт с продуманным дизайном,
-                                    который привлечёт внимание пользователей и поспособствует росту вашего бизнеса.
-                                </p>
-                                <p class="swiper__card__button">Заказать</p>
-                            </a>
-                            <a href="tg://resolve?domain=kairbekoff" class="swiper__card">
-                                <img src="img/slider/2.webp" alt="" class="w-100">
-                                <h3 class="w-100">Разработка<br>логотипа</h3>
-                                <p class="w-100">
-                                    Создам запоминающийся и уникальный логотип, который отразит суть вашего бренда и
-                                    подчеркнёт его ценности. Гарантирую результат, который станет визитной карточкой
-                                    вашего бизнеса.
-                                </p>
-                                <p class="swiper__card__button">Заказать</p>
-                            </a>
-                            <a href="tg://resolve?domain=kairbekoff" class="swiper__card">
-                                <img src="img/slider/3.webp" alt="" class="w-100">
-                                <h3 class="w-100">Оформление<br>презентации</h3>
-                                <p class="w-100">
-                                    Создам профессиональную презентацию для различных целей: бизнес-идеи, творческие
-                                    проекты, праздничные мероприятия. Гарантирую качественный и яркий результат, который
-                                    подчеркнёт суть вашего посыла.
-                                </p>
-                                <p class="swiper__card__button">Заказать</p>
-                            </a>
-                            <a href="tg://resolve?domain=kairbekoff" class="swiper__card">
-                                <img src="img/slider/4.webp" alt="" class="w-100">
-                                <h3 class="w-100">Дизайн постера,<br>плаката или афиши</h3>
-                                <p class="w-100">
-                                    Разработаю уникальный и запоминающийся плакат, который привлечёт внимание к вашему
-                                    событию или проекту. Эффектный дизайн вдохновит вашу аудиторию и подчеркнёт
-                                    значимость идеи.
-                                </p>
-                                <p class="swiper__card__button">Заказать</p>
-                            </a>
+                        <img src="img/me.webp" alt="" id="top_zhan" class="top-zhan">
+                        <img src="img/ico/top-logo.png" alt="" id="top_logo" class="top-logo">
+                        <div class="text z-index-100">
+                            <h1 class="monoton-regular">KAIRBEKOV</h1>
+                            <p class="akony-font">Разработка сайтов<br>и графический дизайн</p>
+                            <a target="_blank" href="#services">Заказать</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="razdel-top mt-3"></div>
-        <div class="section_4" id="portfolio">
-            <div class="sites">
-                <div class="blure w-100 h-100">
-                    <div class="container">
-                        <div class="content">
-                            <h2 class="title bold">Мои сайты</h2>
-                            <hr>
-                            <div class="site__cards w-100">
-                                <a class="site__card openModal" data-modal-id="myModal1">
-                                    <img src="img/mockup/image78.webp" alt="">
-                                    <h4>Saukele.ru</h4>
-                                    <p class="site__card__open__button">Посмотреть</p>
-                                </a>
-                                <a class="site__card openModal" data-modal-id="myModal2">
-                                    <img src="img/mockup/library.webp" alt="">
-                                    <h4>Библиотека на JS</h4>
-                                    <p class="site__card__open__button">Посмотреть</p>
-                                </a>
-                                <a class="site__card openModal" data-modal-id="myModal3">
-                                    <img src="img/mockup/locations.webp" alt="">
-                                    <h4>Культурный Каталог Казахстана</h4>
-                                    <p class="site__card__open__button">Посмотреть</p>
-                                </a>
-                                <a class="site__card openModal" data-modal-id="myModal4">
-                                    <img src="img/mockup/kairbekov-official.webp" alt="">
-                                    <h4>Kairbekov official</h4>
-                                    <p class="site__card__open__button">Посмотреть</p>
-                                </a>
+    </section>
+    <section class="razdel-bottom mb-2"></section>
+    <header id="header" class="section_2 w-100 pt-2 pb-2 z-index-100">
+        <div class="container">
+            <nav class="navbar">
+                <div class="container w-100">
+                    <div class="navbar__wrap w-100">
+                        <a href="#wrapper" class="logo">
+                            <img class="header__logo" src="img/ico/logo.png" alt="logo">
+                        </a>
+                        <div class="hamb">
+                            <div class="hamb__field" id="hamb">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
+                        </div>
+                        <ul class="menu justify-content-end" id="menu">
+                            <li class="text-15px">
+                                <a class="link" href="#wrapper">Главная</a>
+                            </li>
+                            <li class="text-15px">
+                                <a class="resources link" href="#about">Обо мне</a>
+                            </li>
+                            <li class="text-15px">
+                                <a class="services link" href="#services">Услуги</a>
+                            </li>
+                            <li class="text-15px">
+                                <a class="services link" href="#portfolio">Сайты</a>
+                            </li>
+                            <li class="text-15px">
+                                <a class="services link" href="#designs">Дизайны</a>
+                            </li>
+                            <li class="text-15px">
+                                <a class="about link" href="#licenses">Сертификаты</a>
+                            </li>
+                            <li class="text-15px">
+                                <a class="about link" href="#contacts">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="popup blure" id="popup"></div>
+        </div>
+    </header>
+    <section class="razdel-top mt-3"></section>
+    <section class="section_3" id="about" aria-label="Обо мне и моих навыках">
+        <div class="uslugi">
+            <div class="blure w-100 h-100">
+                <div class="container">
+                    <div class="content">
+                        <h2 class="title bold">Привет, меня зовут Каирбеков Жанат</h2>
+                        <hr>
+                        <div class="cards">
+                            <!-- Левая колонка -->
+                            <div class="cards__left">
+                                <div>
+                                    <img src="img/ico/about-title.png" alt="Иконка раздела 'Обо мне'"
+                                        class="img__about-title">
+                                </div>
+                                <div class="card__about d-flex">
+                                    <div class="title d-flex">
+                                        <img src="img/ico/about.png" alt="Иконка 'Обо мне'">
+                                        <h3 class="mb-0">Обо мне</h3>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                Я выпускник Омской академии экономики и предпринимательства, по
+                                                специальности «Информационные системы и программирование».
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>Более года занимаюсь разработкой сайтов на HTML, CSS, Bootstrap и
+                                                Laravel.</p>
+                                        </li>
+                                        <li>
+                                            <p>Опыт в графическом дизайне — более двух лет: создание логотипов, афиш,
+                                                презентаций и брендирования.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Правая колонка -->
+                            <div class="cards__right">
+                                <!-- Навыки -->
+                                <div class="card__skills">
+                                    <div class="title d-flex">
+                                        <img src="img/ico/skills.png" alt="Иконка 'Навыки'">
+                                        <h3 class="mb-0">Навыки</h3>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                <strong>Программирование:</strong> HTML5, CSS3, Bootstrap, Laravel,
+                                                JavaScript, базовые знания React.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <strong>Дизайн:</strong> Уверенная работа в Figma, базовые навыки в
+                                                Adobe Photoshop.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Опыт -->
+                                <div class="card__experience">
+                                    <div class="title d-flex">
+                                        <img src="img/ico/experience.png" alt="Иконка 'Опыт'">
+                                        <h3 class="mb-0">Опыт работы</h3>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <p>Сотрудничество с известными блогерами из Омска: разработка дизайнов и
+                                                лендингов.</p>
+                                        </li>
+                                        <li>
+                                            <p>Партнёр-дизайнер в проекте «Феникс» — создание визуального стиля и
+                                                интерфейсов.</p>
+                                        </li>
+                                        <li>
+                                            <p>Дизайнер образцового хореографического коллектива «Ажар» (г. Омск):
+                                                афиши, брендинг, вышивка.</p>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="razdel-bottom mb-2"></div>
-        <div class="modals">
-            <div id="myModal1" class="modal">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title mb-0" id="exampleModalLabel1">Saukele.ru</h5>
-                        <span class="closeModal" data-modal-id="myModal1" style="float: right">&times;</span>
-                    </div>
+    </section>
+    <section class="razdel-bottom mb-2"></section>
+    <section class="production__section_4" id="services">
+        <div class="services">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title bold">Мои услуги</h2>
                     <hr>
-                    <div class="modal-body">
-                        <a target="_blank" href="https://www.kairbekoff.kz/saukele/"
-                            class="modal__open_site__button">Открыть сайт</a>
-                        <a target="_blank" href="https://github.com/123456789255/saukele_online-shop"
-                            class="modal__open_site__button">Открыть github проекта</a>
-                        <div class="modal-locations">
-                            <h2>🛍️ Saukele.ru</h2>
-                            <p><strong>Saukele.ru</strong> — это веб-приложение электронной коммерции,
-                                разработанное с использованием фреймворка Laravel и шаблонизатора Blade. Проект
-                                предоставляет функциональность для просмотра товаров, управления корзиной и оформления
-                                заказов. Сайт Saukele разработан для ОРОО "Казахи Омска" в рамках дипломного проекта.
-                                Кроме того, он будет функционировать как интернет-магазин.</p>
-
-                            <hr>
-
-                            <h3>🛠️ Структура проекта</h3>
-                            <ul>
-                                <li><code>index.php</code> — начальная точка входа в приложение.</li>
-                                <li><code>laravel/</code> — директория с исходным кодом Laravel-приложения.</li>
-                                <li><code>css/</code>, <code>js/</code>, <code>img/</code> — статические ресурсы (стили,
-                                    скрипты, изображения).</li>
-                                <li><code>.htaccess</code>, <code>robots.txt</code>, <code>favicon.ico</code> —
-                                    конфигурационные и вспомогательные файлы.</li>
-                            </ul>
-
-                            <hr>
-
-                            <h3>🧰 Используемые технологии</h3>
-                            <ul>
-                                <li><strong>Laravel</strong> — фреймворк PHP для создания веб-приложений.</li>
-                                <li><strong>Blade</strong> — встроенный шаблонизатор Laravel.</li>
-                                <li><strong>PHP</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> — основные
-                                    языки разработки.</li>
-                            </ul>
-
-                            <hr>
-
-                            <h3>📄 Лицензия</h3>
-                            <p>Авторские права © 2025</p>
-                            <p>Омская Региональная Общественная Организация «Казахи Омска» </p>
-                            <p>Разработчик: Каирбеков Жанат</p>
-                            <p>См. файл <a href="https://github.com/123456789255/saukele_online-shop/blob/main/LICENSE"
-                                    target="_blank">LICENSE</a> для подробностей.</p>
-
-                        </div>
-                        <a target="_blank" href="https://www.kairbekoff.kz/saukele/">
-                            <img src="img/site-colors/" alt="">
+                    <div class="slider__list w-100">
+                        <a href="tg://resolve?domain=kairbekoff" class="swiper__card">
+                            <img src="img/slider/1.webp" alt="" class="w-100">
+                            <h3 class="w-100">
+                                Разработка сайта<br>Landing Page
+                            </h3>
+                            <p class="w-100">
+                                Разработаю для вас современный, уникальный и креативный сайт с продуманным дизайном,
+                                который привлечёт внимание пользователей и поспособствует росту вашего бизнеса.
+                            </p>
+                            <p class="swiper__card__button">Заказать</p>
                         </a>
-                        <a target="_blank" href="https://www.kairbekoff.kz/saukele/">
-                            <img src="img/mockup/image78.webp" alt="">
+                        <a href="tg://resolve?domain=kairbekoff" class="swiper__card">
+                            <img src="img/slider/2.webp" alt="" class="w-100">
+                            <h3 class="w-100">Разработка<br>логотипа</h3>
+                            <p class="w-100">
+                                Создам запоминающийся и уникальный логотип, который отразит суть вашего бренда и
+                                подчеркнёт его ценности. Гарантирую результат, который станет визитной карточкой
+                                вашего бизнеса.
+                            </p>
+                            <p class="swiper__card__button">Заказать</p>
                         </a>
-                        <a target="_blank" href="https://www.kairbekoff.kz/saukele/">
-                            <img src="img/sites/saukele.webp" alt="">
+                        <a href="tg://resolve?domain=kairbekoff" class="swiper__card">
+                            <img src="img/slider/3.webp" alt="" class="w-100">
+                            <h3 class="w-100">Оформление<br>презентации</h3>
+                            <p class="w-100">
+                                Создам профессиональную презентацию для различных целей: бизнес-идеи, творческие
+                                проекты, праздничные мероприятия. Гарантирую качественный и яркий результат, который
+                                подчеркнёт суть вашего посыла.
+                            </p>
+                            <p class="swiper__card__button">Заказать</p>
+                        </a>
+                        <a href="tg://resolve?domain=kairbekoff" class="swiper__card">
+                            <img src="img/slider/4.webp" alt="" class="w-100">
+                            <h3 class="w-100">Дизайн постера,<br>плаката или афиши</h3>
+                            <p class="w-100">
+                                Разработаю уникальный и запоминающийся плакат, который привлечёт внимание к вашему
+                                событию или проекту. Эффектный дизайн вдохновит вашу аудиторию и подчеркнёт
+                                значимость идеи.
+                            </p>
+                            <p class="swiper__card__button">Заказать</p>
                         </a>
                     </div>
                 </div>
             </div>
-            <div id="myModal2" class="modal">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title mb-0" id="exampleModalLabel2">Цифровая библиотека на JS</h5>
-                        <span class="closeModal" data-modal-id="myModal2" style="float: right">&times;</span>
+        </div>
+    </section>
+    <section class="razdel-top mt-3"></section>
+    <section class="section_4" id="portfolio">
+        <div class="sites">
+            <div class="blure w-100 h-100">
+                <div class="container">
+                    <div class="content">
+                        <h2 class="title bold">Мои сайты</h2>
+                        <hr>
+                        <div class="site__cards w-100">
+                            <a class="site__card openModal" data-modal-id="myModal1">
+                                <img src="img/mockup/image78.webp" alt="">
+                                <h4>Saukele.ru</h4>
+                                <p class="site__card__open__button">Посмотреть</p>
+                            </a>
+                            <a class="site__card openModal" data-modal-id="myModal2">
+                                <img src="img/mockup/library.webp" alt="">
+                                <h4>Библиотека на JS</h4>
+                                <p class="site__card__open__button">Посмотреть</p>
+                            </a>
+                            <a class="site__card openModal" data-modal-id="myModal3">
+                                <img src="img/mockup/locations.webp" alt="">
+                                <h4>Культурный Каталог Казахстана</h4>
+                                <p class="site__card__open__button">Посмотреть</p>
+                            </a>
+                            <a class="site__card openModal" data-modal-id="myModal4">
+                                <img src="img/mockup/kairbekov-official.webp" alt="">
+                                <h4>Kairbekov official</h4>
+                                <p class="site__card__open__button">Посмотреть</p>
+                            </a>
+                        </div>
                     </div>
-                    <hr>
-                    <div class="modal-body">
-                        <a target="_blank" href="https://kairbekov-kazah-library.netlify.app/"
-                            class="modal__open_site__button">Открыть сайт</a>
-                        <a target="_blank" href="https://github.com/123456789255/kazakh-library"
-                            class="modal__open_site__button">Открыть github проекта</a>
-                        <div class="container">
-                            <div class="modal-library">
-                                <h2>📚 Цифровая библиотека казахстанской литературы</h2>
-                                <p>Веб-сервис для чтения, скачивания и обсуждения книг казахстанских авторов. Поддержка
-                                    администрирования и отзывов, онлайн-чтение и фильтрация по жанрам, языку, году
-                                    издания и
-                                    другим параметрам.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="razdel-bottom mb-2"></section>
+    <section class="modals">
+        <div id="myModal1" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mb-0" id="exampleModalLabel1">Saukele.ru</h5>
+                    <span class="closeModal" data-modal-id="myModal1" style="float: right">&times;</span>
+                </div>
+                <hr>
+                <div class="modal-body">
+                    <a target="_blank" href="https://www.kairbekoff.kz/saukele/"
+                        class="modal__open_site__button">Открыть сайт</a>
+                    <a target="_blank" href="https://github.com/123456789255/saukele_online-shop"
+                        class="modal__open_site__button">Открыть github проекта</a>
+                    <div class="modal-locations">
+                        <h2>🛍️ Saukele.ru</h2>
+                        <p><strong>Saukele.ru</strong> — это веб-приложение электронной коммерции,
+                            разработанное с использованием фреймворка Laravel и шаблонизатора Blade. Проект
+                            предоставляет функциональность для просмотра товаров, управления корзиной и оформления
+                            заказов. Сайт Saukele разработан для ОРОО "Казахи Омска" в рамках дипломного проекта.
+                            Кроме того, он будет функционировать как интернет-магазин.</p>
 
-                                <hr>
+                        <hr>
 
-                                <h3>🎯 Цель проекта</h3>
-                                <ul>
-                                    <li>Каталог книг</li>
-                                    <li>Чтение онлайн и скачивание</li>
-                                    <li>Обсуждение и отзывы</li>
-                                    <li>Удобная админка для управления контентом</li>
-                                </ul>
+                        <h3>🛠️ Структура проекта</h3>
+                        <ul>
+                            <li><code>index.php</code> — начальная точка входа в приложение.</li>
+                            <li><code>laravel/</code> — директория с исходным кодом Laravel-приложения.</li>
+                            <li><code>css/</code>, <code>js/</code>, <code>img/</code> — статические ресурсы (стили,
+                                скрипты, изображения).</li>
+                            <li><code>.htaccess</code>, <code>robots.txt</code>, <code>favicon.ico</code> —
+                                конфигурационные и вспомогательные файлы.</li>
+                        </ul>
 
-                                <hr>
+                        <hr>
 
-                                <h3>🗂️ Структура проекта</h3>
-                                <h4>Публичная часть (<code>/</code>)</h4>
-                                <ul>
-                                    <li>Главная страница с подборкой книг</li>
-                                    <li>Страница каталога с фильтрами: обложка, название, автор, жанр, год, язык,
-                                        описание
-                                    </li>
-                                    <li>Страница книги: обложка, описание, информация (жанр, язык, год, теги, автор),
-                                        кнопки
-                                        «📖 Читать онлайн», «📥 Скачать», блок отзывов (оценка, текст, имя)</li>
-                                    <li>Страница поиска</li>
-                                    <li>Личный кабинет пользователя</li>
-                                    <li>Страницы "Избранное" и "Прочитано"</li>
-                                </ul>
+                        <h3>🧰 Используемые технологии</h3>
+                        <ul>
+                            <li><strong>Laravel</strong> — фреймворк PHP для создания веб-приложений.</li>
+                            <li><strong>Blade</strong> — встроенный шаблонизатор Laravel.</li>
+                            <li><strong>PHP</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> — основные
+                                языки разработки.</li>
+                        </ul>
 
-                                <hr>
+                        <hr>
 
-                                <h3>🔐 Авторизация</h3>
-                                <h4>Роли пользователей</h4>
-                                <ul>
-                                    <li>🕵️‍♂️ <strong>Гость</strong> — может читать, скачивать и оставлять отзывы</li>
-                                    <li>🛡 <strong>Админ</strong> — имеет доступ к админке</li>
-                                </ul>
-                                <p><strong>Страница авторизации:</strong> <code>/admiral</code></p>
-                                <p>Авторизация через Email + Пароль. Реализована с помощью Supabase Auth.</p>
+                        <h3>📄 Лицензия</h3>
+                        <p>Авторские права © 2025</p>
+                        <p>Омская Региональная Общественная Организация «Казахи Омска» </p>
+                        <p>Разработчик: Каирбеков Жанат</p>
+                        <p>См. файл <a href="https://github.com/123456789255/saukele_online-shop/blob/main/LICENSE"
+                                target="_blank">LICENSE</a> для подробностей.</p>
 
-                                <hr>
+                    </div>
+                    <a target="_blank" href="https://www.kairbekoff.kz/saukele/">
+                        <img src="img/site-colors/" alt="">
+                    </a>
+                    <a target="_blank" href="https://www.kairbekoff.kz/saukele/">
+                        <img src="img/mockup/image78.webp" alt="">
+                    </a>
+                    <a target="_blank" href="https://www.kairbekoff.kz/saukele/">
+                        <img src="img/sites/saukele.webp" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="myModal2" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mb-0" id="exampleModalLabel2">Цифровая библиотека на JS</h5>
+                    <span class="closeModal" data-modal-id="myModal2" style="float: right">&times;</span>
+                </div>
+                <hr>
+                <div class="modal-body">
+                    <a target="_blank" href="https://kairbekov-kazah-library.netlify.app/"
+                        class="modal__open_site__button">Открыть сайт</a>
+                    <a target="_blank" href="https://github.com/123456789255/kazakh-library"
+                        class="modal__open_site__button">Открыть github проекта</a>
+                    <div class="container">
+                        <div class="modal-library">
+                            <h2>📚 Цифровая библиотека казахстанской литературы</h2>
+                            <p>Веб-сервис для чтения, скачивания и обсуждения книг казахстанских авторов. Поддержка
+                                администрирования и отзывов, онлайн-чтение и фильтрация по жанрам, языку, году
+                                издания и
+                                другим параметрам.</p>
 
-                                <h3>🛠 Админка (<code>/book-edit</code>, <code>/review-edit</code>)</h3>
-                                <p>Доступна только авторизованным администраторам.</p>
-                                <ul>
-                                    <li><strong>Книги:</strong> добавление, редактирование, удаление, загрузка обложки и
-                                        PDF/EPUB</li>
-                                    <li><strong>Отзывы:</strong> модерация и удаление</li>
-                                </ul>
+                            <hr>
 
-                                <hr>
+                            <h3>🎯 Цель проекта</h3>
+                            <ul>
+                                <li>Каталог книг</li>
+                                <li>Чтение онлайн и скачивание</li>
+                                <li>Обсуждение и отзывы</li>
+                                <li>Удобная админка для управления контентом</li>
+                            </ul>
 
-                                <h3>🔄 Backend API</h3>
-                                <ul>
-                                    <li>Язык: <strong>Vanilla JavaScript</strong></li>
-                                    <li>База данных и Storage: <strong>Supabase</strong></li>
-                                    <li>Запросы выполняются через <code>fetch</code></li>
-                                </ul>
-                                <p>Пример эндпоинта: <code>/book.html?id=(id книги)</code> — просмотр конкретной книги
-                                </p>
+                            <hr>
 
-                                <hr>
+                            <h3>🗂️ Структура проекта</h3>
+                            <h4>Публичная часть (<code>/</code>)</h4>
+                            <ul>
+                                <li>Главная страница с подборкой книг</li>
+                                <li>Страница каталога с фильтрами: обложка, название, автор, жанр, год, язык,
+                                    описание
+                                </li>
+                                <li>Страница книги: обложка, описание, информация (жанр, язык, год, теги, автор),
+                                    кнопки
+                                    «📖 Читать онлайн», «📥 Скачать», блок отзывов (оценка, текст, имя)</li>
+                                <li>Страница поиска</li>
+                                <li>Личный кабинет пользователя</li>
+                                <li>Страницы "Избранное" и "Прочитано"</li>
+                            </ul>
 
-                                <h3>📁 Структура базы данных</h3>
+                            <hr>
 
-                                <h4>Таблица: <code>books</code></h4>
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>Поле</th>
-                                            <th>Тип</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>id</td>
-                                            <td>UUID</td>
-                                        </tr>
-                                        <tr>
-                                            <td>title</td>
-                                            <td>string</td>
-                                        </tr>
-                                        <tr>
-                                            <td>genre</td>
-                                            <td>string</td>
-                                        </tr>
-                                        <tr>
-                                            <td>description</td>
-                                            <td>text</td>
-                                        </tr>
-                                        <tr>
-                                            <td>cover_url</td>
-                                            <td>string</td>
-                                        </tr>
-                                        <tr>
-                                            <td>pdf_url</td>
-                                            <td>string</td>
-                                        </tr>
-                                        <tr>
-                                            <td>year</td>
-                                            <td>integer</td>
-                                        </tr>
-                                        <tr>
-                                            <td>language</td>
-                                            <td>string</td>
-                                        </tr>
-                                        <tr>
-                                            <td>created_at</td>
-                                            <td>timestamp</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <h3>🔐 Авторизация</h3>
+                            <h4>Роли пользователей</h4>
+                            <ul>
+                                <li>🕵️‍♂️ <strong>Гость</strong> — может читать, скачивать и оставлять отзывы</li>
+                                <li>🛡 <strong>Админ</strong> — имеет доступ к админке</li>
+                            </ul>
+                            <p><strong>Страница авторизации:</strong> <code>/admiral</code></p>
+                            <p>Авторизация через Email + Пароль. Реализована с помощью Supabase Auth.</p>
 
-                                <h4>Таблица: <code>reviews</code></h4>
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>Поле</th>
-                                            <th>Тип</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>id</td>
-                                            <td>UUID</td>
-                                        </tr>
-                                        <tr>
-                                            <td>book_id</td>
-                                            <td>UUID</td>
-                                        </tr>
-                                        <tr>
-                                            <td>name</td>
-                                            <td>string</td>
-                                        </tr>
-                                        <tr>
-                                            <td>rating</td>
-                                            <td>integer</td>
-                                        </tr>
-                                        <tr>
-                                            <td>comment</td>
-                                            <td>text</td>
-                                        </tr>
-                                        <tr>
-                                            <td>created_at</td>
-                                            <td>timestamp</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <hr>
 
-                                <hr>
+                            <h3>🛠 Админка (<code>/book-edit</code>, <code>/review-edit</code>)</h3>
+                            <p>Доступна только авторизованным администраторам.</p>
+                            <ul>
+                                <li><strong>Книги:</strong> добавление, редактирование, удаление, загрузка обложки и
+                                    PDF/EPUB</li>
+                                <li><strong>Отзывы:</strong> модерация и удаление</li>
+                            </ul>
 
-                                <h3>🎨 Фронтенд</h3>
-                                <ul>
-                                    <li>HTML5 + CSS3</li>
-                                    <li>Vanilla JavaScript</li>
-                                    <li>Fetch API</li>
-                                    <li>Модальные окна</li>
-                                    <li>Адаптивная вёрстка (мобильные/десктоп)</li>
-                                </ul>
+                            <hr>
 
-                                <hr>
+                            <h3>🔄 Backend API</h3>
+                            <ul>
+                                <li>Язык: <strong>Vanilla JavaScript</strong></li>
+                                <li>База данных и Storage: <strong>Supabase</strong></li>
+                                <li>Запросы выполняются через <code>fetch</code></li>
+                            </ul>
+                            <p>Пример эндпоинта: <code>/book.html?id=(id книги)</code> — просмотр конкретной книги
+                            </p>
 
-                                <h3>📖 Онлайн-чтение</h3>
-                                <p>Встроенный PDF viewer. Книга открывается в модальном окне или на отдельной странице.
-                                </p>
+                            <hr>
 
-                                <hr>
+                            <h3>📁 Структура базы данных</h3>
 
-                                <h3>🔮 Будущие доработки (после MVP)</h3>
-                                <ul>
-                                    <li>Комментарии к рецензиям</li>
-                                    <li>Система лайков/дизлайков</li>
-                                    <li>Подписка на авторов</li>
-                                    <li>Темная тема</li>
-                                    <li>Интеграция с внешними API библиотек</li>
-                                </ul>
+                            <h4>Таблица: <code>books</code></h4>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Поле</th>
+                                        <th>Тип</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>id</td>
+                                        <td>UUID</td>
+                                    </tr>
+                                    <tr>
+                                        <td>title</td>
+                                        <td>string</td>
+                                    </tr>
+                                    <tr>
+                                        <td>genre</td>
+                                        <td>string</td>
+                                    </tr>
+                                    <tr>
+                                        <td>description</td>
+                                        <td>text</td>
+                                    </tr>
+                                    <tr>
+                                        <td>cover_url</td>
+                                        <td>string</td>
+                                    </tr>
+                                    <tr>
+                                        <td>pdf_url</td>
+                                        <td>string</td>
+                                    </tr>
+                                    <tr>
+                                        <td>year</td>
+                                        <td>integer</td>
+                                    </tr>
+                                    <tr>
+                                        <td>language</td>
+                                        <td>string</td>
+                                    </tr>
+                                    <tr>
+                                        <td>created_at</td>
+                                        <td>timestamp</td>
+                                    </tr>
+                                </tbody>
+                            </table>
 
-                                <hr>
+                            <h4>Таблица: <code>reviews</code></h4>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Поле</th>
+                                        <th>Тип</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>id</td>
+                                        <td>UUID</td>
+                                    </tr>
+                                    <tr>
+                                        <td>book_id</td>
+                                        <td>UUID</td>
+                                    </tr>
+                                    <tr>
+                                        <td>name</td>
+                                        <td>string</td>
+                                    </tr>
+                                    <tr>
+                                        <td>rating</td>
+                                        <td>integer</td>
+                                    </tr>
+                                    <tr>
+                                        <td>comment</td>
+                                        <td>text</td>
+                                    </tr>
+                                    <tr>
+                                        <td>created_at</td>
+                                        <td>timestamp</td>
+                                    </tr>
+                                </tbody>
+                            </table>
 
-                                <h3>📂 Структура проекта</h3>
-                                <pre>
+                            <hr>
+
+                            <h3>🎨 Фронтенд</h3>
+                            <ul>
+                                <li>HTML5 + CSS3</li>
+                                <li>Vanilla JavaScript</li>
+                                <li>Fetch API</li>
+                                <li>Модальные окна</li>
+                                <li>Адаптивная вёрстка (мобильные/десктоп)</li>
+                            </ul>
+
+                            <hr>
+
+                            <h3>📖 Онлайн-чтение</h3>
+                            <p>Встроенный PDF viewer. Книга открывается в модальном окне или на отдельной странице.
+                            </p>
+
+                            <hr>
+
+                            <h3>🔮 Будущие доработки (после MVP)</h3>
+                            <ul>
+                                <li>Комментарии к рецензиям</li>
+                                <li>Система лайков/дизлайков</li>
+                                <li>Подписка на авторов</li>
+                                <li>Темная тема</li>
+                                <li>Интеграция с внешними API библиотек</li>
+                            </ul>
+
+                            <hr>
+
+                            <h3>📂 Структура проекта</h3>
+                            <pre>
                                     <code>
 /kazakh-library
 ├── index.html          
@@ -560,180 +640,180 @@
 │   └── style.css       
                                     </code>
                                 </pre>
-                                <hr>
+                            <hr>
 
-                                <h3>📬 Обратная связь</h3>
-                                <p>Если вы нашли баг или хотите предложить идею — создайте Issue или Pull Request.</p>
+                            <h3>📬 Обратная связь</h3>
+                            <p>Если вы нашли баг или хотите предложить идею — создайте Issue или Pull Request.</p>
 
-                                <hr>
+                            <hr>
 
-                                <h3>📄 Лицензия</h3>
-                                <p>Проект распространяется под лицензией <strong>MIT</strong>.<br>См. файл
-                                    <a href="https://github.com/123456789255/kazakh-library/blob/main/LICENSE"
-                                        target="_blank">LICENSE</a> для подробностей.
-                                </p>
+                            <h3>📄 Лицензия</h3>
+                            <p>Проект распространяется под лицензией <strong>MIT</strong>.<br>См. файл
+                                <a href="https://github.com/123456789255/kazakh-library/blob/main/LICENSE"
+                                    target="_blank">LICENSE</a> для подробностей.
+                            </p>
 
-                                <hr>
+                            <hr>
 
-                                <p><strong>✍️ Проект создан с целью популяризации культурного наследия Республики
-                                        Казахстан.</strong></p>
-                                <p><em>Разработка: @kairbekov.official • 2025</em></p>
-                            </div>
+                            <p><strong>✍️ Проект создан с целью популяризации культурного наследия Республики
+                                    Казахстан.</strong></p>
+                            <p><em>Разработка: @kairbekov.official • 2025</em></p>
                         </div>
-                        <img src="img/mockup/library.webp" alt="">
-                        <img src="img/sites/library.webp" alt="">
                     </div>
+                    <img src="img/mockup/library.webp" alt="">
+                    <img src="img/sites/library.webp" alt="">
                 </div>
             </div>
-            <div id="myModal3" class="modal">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title mb-0" id="exampleModalLabel6">Культурный Каталог Казахстана</h5>
-                        <span class="closeModal" data-modal-id="myModal3" style="float: right">&times;</span>
-                    </div>
-                    <hr>
-                    <div class="modal-body">
-                        <a target="_blank" href="https://kazakhstan-project.netlify.app"
-                            class="modal__open_site__button">Открыть сайт</a>
-                        <a target="_blank" href="https://github.com/123456789255/kazakhstan-project"
-                            class="modal__open_site__button">Открыть github проекта</a>
-                        <div class="container">
-                            <div class="modal-locations">
-                                <h2>🇰🇿 Культурный Каталог Казахстана</h2>
-                                <p>Адаптивный веб-каталог культурных достопримечательностей Казахстана с интерактивными
-                                    функциями: фильтрацией, избранным, отзывами, афишей мероприятий и блогом о культуре.
-                                </p>
-                                <hr>
-                                <h3>📌 Описание проекта</h3>
-                                <p>Цель проекта — предоставить пользователям удобный и современный способ знакомства с
-                                    культурным наследием Казахстана. Веб-сайт реализует каталог достопримечательностей с
-                                    возможностью фильтрации, оценки, добавления в избранное, а также содержит раздел с
-                                    мероприятиями и культурный блог.</p>
-                                <hr>
-                                <h3>🛠 Основной функционал</h3>
-                                <ul class="func">
-                                    <li>
-                                        <p class="func__p"><strong>Каталог достопримечательностей:</strong>
-                                        <ul>
-                                            <li>Карточки с фото, названием, описанием, категорией, регионом, рейтингом
-                                            </li>
-                                            <li>Кнопка "Подробнее" с открытием модального окна</li>
-                                            <li>Фильтрация по региону, категории, рейтингу</li>
-                                            <li>Поиск по названию</li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <p class="func__p"><strong>Избранное:</strong></p>
-                                        <ul>
-                                            <li>Добавление/удаление достопримечательностей в избранное</li>
-                                            <li>Сохранение избранного в LocalStorage</li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <p class="func__p"><strong>Отзывы и рейтинги:</strong></p>
-                                        <ul>
-                                            <li>Добавление отзывов (имя, оценка, текст)</li>
-                                            <li>Отображение рейтингов и комментариев</li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <p class="func__p"><strong>Афиша мероприятий:</strong></p>
-                                        <ul>
-                                            <li>Список событий с датой, местом проведения и описанием</li>
-                                            <li>Фильтрация по дате и региону</li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <p class="func__p"><strong>Блог о культуре:</strong></p>
-                                        <ul>
-                                            <li>Статьи с поддержкой Markdown</li>
-                                            <li>Отдельные страницы статей</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <hr>
-                                <h3>🎨 Дизайн и UI</h3>
-                                <ul>
-                                    <li>Минималистичный и чистый пользовательский интерфейс</li>
-                                    <li>Карточки достопримечательностей и мероприятий</li>
-                                    <li>Табы для переключения между разделами</li>
-                                    <li>Модальные окна для подробной информации</li>
-                                    <li>Звёздочный рейтинг</li>
-                                </ul>
-                                <hr>
-                                <h3>⚙️ Технологии</h3>
-                                <ul>
-                                    <li><strong>HTML5</strong> — семантическая и SEO-ориентированная разметка</li>
-                                    <li><strong>CSS3</strong> — адаптивная и отзывчивая вёрстка</li>
-                                    <li><strong>Vanilla JavaScript</strong> — реализация интерактивного функционала</li>
-                                    <li><strong>LocalStorage</strong> — хранение избранного</li>
-                                    <li><strong>Netlify</strong> — хостинг и деплой</li>
-                                </ul>
-                                <hr>
-                                <h3>📁 Структура страниц</h3>
-                                <ul>
-                                    <li><code>/</code> — Главная страница: фильтры, каталог достопримечательностей</li>
-                                    <li><code>/favorites</code> — Избранное</li>
-                                    <li><code>/events</code> — Афиша мероприятий</li>
-                                    <li><code>/blog</code> — Список статей</li>
-                                    <li><code>/blog/article.html</code> — Шаблон страницы статьи</li>
-                                    <li>Модальные окна — отображаются при клике на карточку</li>
-                                </ul>
-                                <hr>
-                                <h3>🖼️ Дальнейшая оптимизация</h3>
-                                <ul>
-                                    <li>Сжатые изображения (WebP, оптимизированные JPEG/PNG)</li>
-                                    <li>Минификация CSS и JS</li>
-                                    <li>Ленивая загрузка контента (lazy loading)</li>
-                                </ul>
-                                <hr>
-                                <h3>📌 Планы по доработке</h3>
-                                <ul>
-                                    <li>Интеграция карт (Leaflet.js или Google Maps API)</li>
-                                    <li>Поддержка нескольких языков (казахский, русский, английский)</li>
-                                    <li>Хранение отзывов и избранного на сервере</li>
-                                    <li>Авторизация и регистрация пользователей</li>
-                                </ul>
-                                <hr>
-                                <h3>📄 Лицензия</h3>
-                                <p>Проект распространяется под лицензией <strong>MIT</strong>. См. файл <a
-                                        href="https://github.com/123456789255/kazakhstan-project/blob/main/LICENSE">LICENSE</a>
-                                    для
-                                    подробностей.</p>
+        </div>
+        <div id="myModal3" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mb-0" id="exampleModalLabel6">Культурный Каталог Казахстана</h5>
+                    <span class="closeModal" data-modal-id="myModal3" style="float: right">&times;</span>
+                </div>
+                <hr>
+                <div class="modal-body">
+                    <a target="_blank" href="https://kazakhstan-project.netlify.app"
+                        class="modal__open_site__button">Открыть сайт</a>
+                    <a target="_blank" href="https://github.com/123456789255/kazakhstan-project"
+                        class="modal__open_site__button">Открыть github проекта</a>
+                    <div class="container">
+                        <div class="modal-locations">
+                            <h2>🇰🇿 Культурный Каталог Казахстана</h2>
+                            <p>Адаптивный веб-каталог культурных достопримечательностей Казахстана с интерактивными
+                                функциями: фильтрацией, избранным, отзывами, афишей мероприятий и блогом о культуре.
+                            </p>
+                            <hr>
+                            <h3>📌 Описание проекта</h3>
+                            <p>Цель проекта — предоставить пользователям удобный и современный способ знакомства с
+                                культурным наследием Казахстана. Веб-сайт реализует каталог достопримечательностей с
+                                возможностью фильтрации, оценки, добавления в избранное, а также содержит раздел с
+                                мероприятиями и культурный блог.</p>
+                            <hr>
+                            <h3>🛠 Основной функционал</h3>
+                            <ul class="func">
+                                <li>
+                                    <p class="func__p"><strong>Каталог достопримечательностей:</strong>
+                                    <ul>
+                                        <li>Карточки с фото, названием, описанием, категорией, регионом, рейтингом
+                                        </li>
+                                        <li>Кнопка "Подробнее" с открытием модального окна</li>
+                                        <li>Фильтрация по региону, категории, рейтингу</li>
+                                        <li>Поиск по названию</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p class="func__p"><strong>Избранное:</strong></p>
+                                    <ul>
+                                        <li>Добавление/удаление достопримечательностей в избранное</li>
+                                        <li>Сохранение избранного в LocalStorage</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p class="func__p"><strong>Отзывы и рейтинги:</strong></p>
+                                    <ul>
+                                        <li>Добавление отзывов (имя, оценка, текст)</li>
+                                        <li>Отображение рейтингов и комментариев</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p class="func__p"><strong>Афиша мероприятий:</strong></p>
+                                    <ul>
+                                        <li>Список событий с датой, местом проведения и описанием</li>
+                                        <li>Фильтрация по дате и региону</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p class="func__p"><strong>Блог о культуре:</strong></p>
+                                    <ul>
+                                        <li>Статьи с поддержкой Markdown</li>
+                                        <li>Отдельные страницы статей</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <hr>
+                            <h3>🎨 Дизайн и UI</h3>
+                            <ul>
+                                <li>Минималистичный и чистый пользовательский интерфейс</li>
+                                <li>Карточки достопримечательностей и мероприятий</li>
+                                <li>Табы для переключения между разделами</li>
+                                <li>Модальные окна для подробной информации</li>
+                                <li>Звёздочный рейтинг</li>
+                            </ul>
+                            <hr>
+                            <h3>⚙️ Технологии</h3>
+                            <ul>
+                                <li><strong>HTML5</strong> — семантическая и SEO-ориентированная разметка</li>
+                                <li><strong>CSS3</strong> — адаптивная и отзывчивая вёрстка</li>
+                                <li><strong>Vanilla JavaScript</strong> — реализация интерактивного функционала</li>
+                                <li><strong>LocalStorage</strong> — хранение избранного</li>
+                                <li><strong>Netlify</strong> — хостинг и деплой</li>
+                            </ul>
+                            <hr>
+                            <h3>📁 Структура страниц</h3>
+                            <ul>
+                                <li><code>/</code> — Главная страница: фильтры, каталог достопримечательностей</li>
+                                <li><code>/favorites</code> — Избранное</li>
+                                <li><code>/events</code> — Афиша мероприятий</li>
+                                <li><code>/blog</code> — Список статей</li>
+                                <li><code>/blog/article.html</code> — Шаблон страницы статьи</li>
+                                <li>Модальные окна — отображаются при клике на карточку</li>
+                            </ul>
+                            <hr>
+                            <h3>🖼️ Дальнейшая оптимизация</h3>
+                            <ul>
+                                <li>Сжатые изображения (WebP, оптимизированные JPEG/PNG)</li>
+                                <li>Минификация CSS и JS</li>
+                                <li>Ленивая загрузка контента (lazy loading)</li>
+                            </ul>
+                            <hr>
+                            <h3>📌 Планы по доработке</h3>
+                            <ul>
+                                <li>Интеграция карт (Leaflet.js или Google Maps API)</li>
+                                <li>Поддержка нескольких языков (казахский, русский, английский)</li>
+                                <li>Хранение отзывов и избранного на сервере</li>
+                                <li>Авторизация и регистрация пользователей</li>
+                            </ul>
+                            <hr>
+                            <h3>📄 Лицензия</h3>
+                            <p>Проект распространяется под лицензией <strong>MIT</strong>. См. файл <a
+                                    href="https://github.com/123456789255/kazakhstan-project/blob/main/LICENSE">LICENSE</a>
+                                для
+                                подробностей.</p>
 
-                                <hr>
-                                <p><strong>✍️ Проект создан с целью популяризации культурного наследия Республики
-                                        Казахстан.</strong></p>
-                            </div>
+                            <hr>
+                            <p><strong>✍️ Проект создан с целью популяризации культурного наследия Республики
+                                    Казахстан.</strong></p>
                         </div>
-                        <img src="img/mockup/locations.webp" alt="">
-                        <img src="img/sites/kazahLocations.webp" alt="">
                     </div>
+                    <img src="img/mockup/locations.webp" alt="">
+                    <img src="img/sites/kazahLocations.webp" alt="">
                 </div>
             </div>
-            <div id="myModal4" class="modal">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title mb-0" id="exampleModalLabel6">Kairbekov official</h5>
-                        <span class="closeModal" data-modal-id="myModal4" style="float: right">&times;</span>
-                    </div>
-                    <hr>
-                    <div class="modal-body">
-                        <a target="_blank" href="https://github.com/123456789255/kairbekov-official"
-                            class="modal__open_site__button">Открыть github проекта</a>
-                        <div class="container">
-                            <div class="modal-locations">
-                                <h2>Персональный веб-сайт-портфолио</h2>
-                                <p>Адаптивный и современный персональный сайт-портфолио, созданный с использованием
-                                    <strong>HTML</strong>, <strong>CSS</strong> и <strong>JavaScript</strong>. Проект
-                                    разработан для представления информации о себе, своих услугах, проектах, навыках и
-                                    контактах.
-                                </p>
+        </div>
+        <div id="myModal4" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mb-0" id="exampleModalLabel6">Kairbekov official</h5>
+                    <span class="closeModal" data-modal-id="myModal4" style="float: right">&times;</span>
+                </div>
+                <hr>
+                <div class="modal-body">
+                    <a target="_blank" href="https://github.com/123456789255/kairbekov-official"
+                        class="modal__open_site__button">Открыть github проекта</a>
+                    <div class="container">
+                        <div class="modal-locations">
+                            <h2>Персональный веб-сайт-портфолио</h2>
+                            <p>Адаптивный и современный персональный сайт-портфолио, созданный с использованием
+                                <strong>HTML</strong>, <strong>CSS</strong> и <strong>JavaScript</strong>. Проект
+                                разработан для представления информации о себе, своих услугах, проектах, навыках и
+                                контактах.
+                            </p>
 
-                                <hr>
+                            <hr>
 
-                                <h3>📁 Структура проекта</h3>
-                                <pre>
+                            <h3>📁 Структура проекта</h3>
+                            <pre>
                                     <code>
 /kairbekov-official 
 ├── /img
@@ -751,197 +831,196 @@
 └── script.js
                                     </code>
                                 </pre>
-                                <hr>
-                                <h3>🔧 Основные возможности</h3>
-                                <ul>
-                                    <li>Адаптивный интерфейс (мобильные устройства, планшеты, ПК)</li>
-                                    <li>Фиксированное меню навигации с подсветкой активного раздела при прокрутке</li>
-                                    <li>Блок «Обо мне» с описанием навыков и опыта</li>
-                                    <li>Каталог с услугами (разработка сайтов, логотипов, презентаций и др.)</li>
-                                    <li>Раздел с сайтами-проектами (с модальными окнами и ссылками)</li>
-                                    <li>Галерея дизайнов (афиши, логотипы, презентации)</li>
-                                    <li>Контакты с иконками, ссылками и телефонами</li>
-                                    <li>Используется кастомная типографика и изображения</li>
-                                </ul>
-                                <hr>
-                                <h3>🧰 Используемые технологии</h3>
-                                <ul>
-                                    <li><strong>HTML5</strong> — семантическая разметка</li>
-                                    <li><strong>CSS3</strong> — адаптивная сетка, кастомные шрифты, медиа-запросы</li>
-                                    <li><strong>JavaScript</strong> — взаимодействие с DOM, модальные окна, мобильное
-                                        меню</li>
-                                </ul>
-
-                                <hr>
-
-                                <h3>📬 Контакты разработчика</h3>
-                                <ul>
-                                    <li>📞 Россия: <a href="tel:+79620473900">+7 (962) 047-39-00</a></li>
-                                    <li>📞 Казахстан: <a href="tel:+77053062873">+7 (705) 306-28-73</a></li>
-                                    <li>💬 Telegram: <a href="https://t.me/kairbekoff" target="_blank">@kairbekoff</a>
-                                    </li>
-                                    <li>📸 Instagram: <a href="https://www.instagram.com/kairbekov.official"
-                                            target="_blank">@kairbekov.official</a></li>
-                                    <li>📸 GitHub: <a href="https://github.com/123456789255"
-                                            target="_blank">123456789255</a></li>
-                                </ul>
-
-                                <hr>
-
-                                <h3><a href="https://github.com/123456789255/kairbekov-official/blob/main/LICENSE">📄
-                                        Лицензия</a></h3>
-                                <p>© 2024 Жанат Каирбеков. Все права защищены.</p>
-                                <p>Данный проект защищён авторским правом. Любое копирование, распространение,
-                                    модификация или использование в коммерческих и некоммерческих целях без
-                                    предварительного письменного разрешения автора запрещено.</p>
-                                <hr>
-                                <blockquote>Разработано Жанатом Каирбековым — 2019</blockquote>
-
-                            </div>
-                        </div>
-                        <img src="img/mockup/kairbekov-official.webp" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section_5" id="designs">
-            <div class="designs">
-                <div class="container">
-                    <div class="content">
-                        <h2 class="title bold">Мои дизайн проекты</h2>
-                        <hr>
-                        <div class="design__cards w-100">
-                            <div class="design__card">
-                                <img src="img/designs/di.webp" alt="">
-                                <h4>
-                                    Афиша мероприятия "Презентация премиального клуба ФЕНИКС"
-                                </h4>
-                            </div>
-                            <div class="design__card">
-                                <img src="img/designs/Айлин.webp" alt="">
-                                <h4>
-                                    Ветринный банер для салона люксовой национальной одежды "Айлин"
-                                    <br>
-                                    <a target="_blank" href="https://www.instagram.com/ailin_etno"
-                                        class="design_card__url">@ailin_etno</a>
-                                </h4>
-                            </div>
-                            <div class="design__card">
-                                <img src="img/designs/1.webp" alt="">
-                                <h4>
-                                    Карточка открытия наставничества для<br>Арина Чумак<br>
-                                    <a target="_blank" href="https://www.instagram.com/chumak_arina"
-                                        class="design_card__url">@chumak_arina</a>
-                                </h4>
-                            </div>
-                            <div class="design__card">
-                                <img src="img/designs/Frame411.webp" alt="">
-                                <h4>
-                                    Карточка афиша выбинара для Салии Днищевой<br>
-                                    <a target="_blank" href="https://www.instagram.com/mrs_saliya"
-                                        class="design_card__url">@mrs_saliya</a>
-                                </h4>
-                            </div>
-                            <div class="design__card">
-                                <img src="img/designs/Тлегенова-Алтын.webp" alt="">
-                                <h4>
-                                    Логотип для Тлегенова Алтын<br>
-                                    <a target="_blank" href="https://www.instagram.com/tlegenova_altyn_"
-                                        class="design_card__url">@tlegenova_altyn_</a>
-                                </h4>
-                            </div>
-                            <div class="design__card">
-                                <img src="img/designs/Алина-Малина.webp" alt="">
-                                <h4>
-                                    Логотип для Алина-Малина<br>
-                                    <a target="_blank" href="https://www.instagram.com/malina_alii"
-                                        class="design_card__url">@malina_alii</a>
-                                </h4>
-                            </div>
-                            <div class="design__card">
-                                <img src="img/designs/Инстасибирь.webp" alt="">
-                                <h4>
-                                    Афиша крупного мероприятия Инстасибирь<br>
-                                    <a target="_blank" href="https://www.instagram.com/mrs_saliya"
-                                        class="design_card__url">@mrs_saliya</a>
-                                    <br>
-                                    <a target="_blank" href="https://www.instagram.com/tatiana.kush"
-                                        class="design_card__url">@tatiana.kush</a>
-                                </h4>
-                            </div>
-                            <div class="design__card">
-                                <img src="img/designs/Отчетныйконцерт2023.webp" alt="">
-                                <h4>
-                                    Афиша концерта Образцового хореографического коллектива "Ажар" - Навстрече солнцу!
-                                </h4>
-                            </div>
-                            <div class="design__card">
-                                <img src="img/designs/15декабряконцерт.webp" alt="">
-                                <h4>
-                                    Афиша концерта Образцового хореографического коллектива "Ажар" - Искусство
-                                    объединяет сердца (Приглашенный гость Нурлан Алимжанов)
-                                </h4>
-                            </div>
-                            <div class="design__card">
-                                <img src="img/designs/Предметка.webp" alt="">
-                                <h4>Дизайн карточки товара для Ozon и Wildberries</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="licenses container" id="licenses">
-            <h2 class="title bold">Сертификаты</h2>
-            <hr>
-            <div class="licence">
-                <a href="img/license/pdf/Контент-менеджер.pdf" target="_blank"><img src="img/license/contentManager.png"
-                        alt=""></a>
-                <a href="img/license/pdf/Администратор-базовый.pdf" target="_blank"><img
-                        src="img/license/adminBase.png" alt=""></a>
-            </div>
-        </div>
-        <div class="razdel-top mt-3"></div>
-        <div class="section_6" id="contacts">
-            <div class="about_contacts">
-                <div class="blure w-100 h-100 d-flex flex-column">
-                    <div class="container w-100">
-                        <div class="content w-100">
-                            <h2 class="title bold">Контакты</h2>
                             <hr>
-                            <div class="about_contacts__text w-100">
-                                <a href="https://github.com/123456789255" target="_blank"
-                                    class="contact_1 contact__point d-flex">
-                                    <img src="img/ico/github.png" alt="">
-                                    <p>GitHub</p>
-                                </a>
-                                <a href="https://wa.me/77053062873" class="contact_1 contact__point d-flex">
-                                    <img src="img/ico/kazakhstan.png" alt="">
-                                    <p>+7(705)306 28-73</p>
-                                </a>
-                                <a target="_blank" href="tg://resolve?domain=kairbekoff"
-                                    class="contact_2 contact__point d-flex">
-                                    <img src="img/ico/telegram.png" alt="">
-                                    <p>kairbekoff</p>
-                                </a>
-                                <a target="_blank" href="https://www.instagram.com/kairbekov.official"
-                                    class="contact_3 contact__point d-flex">
-                                    <img src="img/ico/instagram.png" alt="">
-                                    <p>kairbekov.official</p>
-                                </a>
-                            </div>
+                            <h3>🔧 Основные возможности</h3>
+                            <ul>
+                                <li>Адаптивный интерфейс (мобильные устройства, планшеты, ПК)</li>
+                                <li>Фиксированное меню навигации с подсветкой активного раздела при прокрутке</li>
+                                <li>Блок «Обо мне» с описанием навыков и опыта</li>
+                                <li>Каталог с услугами (разработка сайтов, логотипов, презентаций и др.)</li>
+                                <li>Раздел с сайтами-проектами (с модальными окнами и ссылками)</li>
+                                <li>Галерея дизайнов (афиши, логотипы, презентации)</li>
+                                <li>Контакты с иконками, ссылками и телефонами</li>
+                                <li>Используется кастомная типографика и изображения</li>
+                            </ul>
+                            <hr>
+                            <h3>🧰 Используемые технологии</h3>
+                            <ul>
+                                <li><strong>HTML5</strong> — семантическая разметка</li>
+                                <li><strong>CSS3</strong> — адаптивная сетка, кастомные шрифты, медиа-запросы</li>
+                                <li><strong>JavaScript</strong> — взаимодействие с DOM, модальные окна, мобильное
+                                    меню</li>
+                            </ul>
+
+                            <hr>
+
+                            <h3>📬 Контакты разработчика</h3>
+                            <ul>
+                                <li>📞 Россия: <a href="tel:+79620473900">+7 (962) 047-39-00</a></li>
+                                <li>📞 Казахстан: <a href="tel:+77053062873">+7 (705) 306-28-73</a></li>
+                                <li>💬 Telegram: <a href="https://t.me/kairbekoff" target="_blank">@kairbekoff</a>
+                                </li>
+                                <li>📸 Instagram: <a href="https://www.instagram.com/kairbekov.official"
+                                        target="_blank">@kairbekov.official</a></li>
+                                <li>📸 GitHub: <a href="https://github.com/123456789255"
+                                        target="_blank">123456789255</a></li>
+                            </ul>
+
+                            <hr>
+
+                            <h3><a href="https://github.com/123456789255/kairbekov-official/blob/main/LICENSE">📄
+                                    Лицензия</a></h3>
+                            <p>© 2024 Жанат Каирбеков. Все права защищены.</p>
+                            <p>Данный проект защищён авторским правом. Любое копирование, распространение,
+                                модификация или использование в коммерческих и некоммерческих целях без
+                                предварительного письменного разрешения автора запрещено.</p>
+                            <hr>
+                            <blockquote>Разработано Жанатом Каирбековым — 2019</blockquote>
+
                         </div>
-                        <footer id="footer">
-                            <div class="footer__content flex-column">
-                                <p>
-                                    «Facebook/Instagram — проект Meta Platforms Inc., деятельность которой в России
-                                    запрещена»
-                                </p>
-                                <a target="_blank" href="https://www.instagram.com/kairbekov.official">©2019 creator
-                                    <span>@kairbekov.official</span></a>
-                            </div>
-                        </footer>
                     </div>
+                    <img src="img/mockup/kairbekov-official.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_5" id="designs">
+        <div class="designs">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title bold">Мои дизайн проекты</h2>
+                    <hr>
+                    <div class="design__cards w-100">
+                        <div class="design__card">
+                            <img src="img/designs/di.webp" alt="">
+                            <h4>
+                                Афиша мероприятия "Презентация премиального клуба ФЕНИКС"
+                            </h4>
+                        </div>
+                        <div class="design__card">
+                            <img src="img/designs/Айлин.webp" alt="">
+                            <h4>
+                                Ветринный банер для салона люксовой национальной одежды "Айлин"
+                                <br>
+                                <a target="_blank" href="https://www.instagram.com/ailin_etno"
+                                    class="design_card__url">@ailin_etno</a>
+                            </h4>
+                        </div>
+                        <div class="design__card">
+                            <img src="img/designs/1.webp" alt="">
+                            <h4>
+                                Карточка открытия наставничества для<br>Арина Чумак<br>
+                                <a target="_blank" href="https://www.instagram.com/chumak_arina"
+                                    class="design_card__url">@chumak_arina</a>
+                            </h4>
+                        </div>
+                        <div class="design__card">
+                            <img src="img/designs/Frame411.webp" alt="">
+                            <h4>
+                                Карточка афиша выбинара для Салии Днищевой<br>
+                                <a target="_blank" href="https://www.instagram.com/mrs_saliya"
+                                    class="design_card__url">@mrs_saliya</a>
+                            </h4>
+                        </div>
+                        <div class="design__card">
+                            <img src="img/designs/Тлегенова-Алтын.webp" alt="">
+                            <h4>
+                                Логотип для Тлегенова Алтын<br>
+                                <a target="_blank" href="https://www.instagram.com/tlegenova_altyn_"
+                                    class="design_card__url">@tlegenova_altyn_</a>
+                            </h4>
+                        </div>
+                        <div class="design__card">
+                            <img src="img/designs/Алина-Малина.webp" alt="">
+                            <h4>
+                                Логотип для Алина-Малина<br>
+                                <a target="_blank" href="https://www.instagram.com/malina_alii"
+                                    class="design_card__url">@malina_alii</a>
+                            </h4>
+                        </div>
+                        <div class="design__card">
+                            <img src="img/designs/Инстасибирь.webp" alt="">
+                            <h4>
+                                Афиша крупного мероприятия Инстасибирь<br>
+                                <a target="_blank" href="https://www.instagram.com/mrs_saliya"
+                                    class="design_card__url">@mrs_saliya</a>
+                                <br>
+                                <a target="_blank" href="https://www.instagram.com/tatiana.kush"
+                                    class="design_card__url">@tatiana.kush</a>
+                            </h4>
+                        </div>
+                        <div class="design__card">
+                            <img src="img/designs/Отчетныйконцерт2023.webp" alt="">
+                            <h4>
+                                Афиша концерта Образцового хореографического коллектива "Ажар" - Навстрече солнцу!
+                            </h4>
+                        </div>
+                        <div class="design__card">
+                            <img src="img/designs/15декабряконцерт.webp" alt="">
+                            <h4>
+                                Афиша концерта Образцового хореографического коллектива "Ажар" - Искусство
+                                объединяет сердца (Приглашенный гость Нурлан Алимжанов)
+                            </h4>
+                        </div>
+                        <div class="design__card">
+                            <img src="img/designs/Предметка.webp" alt="">
+                            <h4>Дизайн карточки товара для Ozon и Wildberries</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="licenses container" id="licenses">
+        <h2 class="title bold">Сертификаты</h2>
+        <hr>
+        <div class="licence">
+            <a href="img/license/pdf/Контент-менеджер.pdf" target="_blank"><img src="img/license/contentManager.png"
+                    alt=""></a>
+            <a href="img/license/pdf/Администратор-базовый.pdf" target="_blank"><img src="img/license/adminBase.png"
+                    alt=""></a>
+        </div>
+    </section>
+    <section class="razdel-top mt-3"></section>
+    <section class="section_6" id="contacts">
+        <div class="about_contacts">
+            <div class="blure w-100 h-100 d-flex flex-column">
+                <div class="container w-100">
+                    <div class="content w-100">
+                        <h2 class="title bold">Контакты</h2>
+                        <hr>
+                        <div class="about_contacts__text w-100">
+                            <a href="https://github.com/123456789255" target="_blank"
+                                class="contact_1 contact__point d-flex">
+                                <img src="img/ico/github.png" alt="">
+                                <p>GitHub</p>
+                            </a>
+                            <a href="https://wa.me/77053062873" class="contact_1 contact__point d-flex">
+                                <img src="img/ico/kazakhstan.png" alt="">
+                                <p>+7(705)306 28-73</p>
+                            </a>
+                            <a target="_blank" href="tg://resolve?domain=kairbekoff"
+                                class="contact_2 contact__point d-flex">
+                                <img src="img/ico/telegram.png" alt="">
+                                <p>kairbekoff</p>
+                            </a>
+                            <a target="_blank" href="https://www.instagram.com/kairbekov.official"
+                                class="contact_3 contact__point d-flex">
+                                <img src="img/ico/instagram.png" alt="">
+                                <p>kairbekov.official</p>
+                            </a>
+                        </div>
+                    </div>
+                    <footer id="footer">
+                        <div class="footer__content flex-column">
+                            <p>
+                                «Facebook/Instagram — проект Meta Platforms Inc., деятельность которой в России
+                                запрещена»
+                            </p>
+                            <a target="_blank" href="https://www.instagram.com/kairbekov.official">©2019 creator
+                                <span>@kairbekov.official</span></a>
+                        </div>
+                    </footer>
                 </div>
             </div>
         </div>
