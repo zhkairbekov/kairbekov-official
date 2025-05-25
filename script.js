@@ -65,15 +65,18 @@ function renderPopup() {
     }
 }
 
-// Close popup on link click using jQuery
-jQuery(function($) {
-    $(document).on("click", ".link", function() {
-        $("#popup").removeClass("open");
-        $("#hamb").removeClass("active");
-        $("#wrapper").removeClass("noscroll");
-        $("header").removeClass("header-fixed");
-    });
+// Close popup on link click using DOMContentLoaded
+document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("click", function (event) {
+    if (event.target.closest(".link")) {
+      document.getElementById("popup")?.classList.remove("open");
+      document.getElementById("hamb")?.classList.remove("active");
+      document.getElementById("wrapper")?.classList.remove("noscroll");
+      document.querySelector("header")?.classList.remove("header-fixed");
+    }
+  });
 });
+
 
 // Smooth scroll to anchor
 function getYOffsetForScreenWidth() {
